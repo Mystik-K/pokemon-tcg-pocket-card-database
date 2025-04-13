@@ -1,266 +1,1536 @@
 [
   {
-    "id": "pa-001",
+    "id": "p-a-001",
     "name": "Potion",
     "element": null,
     "type": "Trainer",
     "subtype": "Item",
     "health": null,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Heal",
+        "effects": "Heal 20 damage from 1 of your Pokémon.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-002",
+    "id": "p-a-002",
     "name": "X Speed",
     "element": null,
     "type": "Trainer",
     "subtype": "Item",
     "health": null,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Speed Boost",
+        "effects": "During this turn, the Retreat Cost of your Active Pokémon is 1 less.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-003",
+    "id": "p-a-003",
     "name": "Hand Scope",
     "element": null,
     "type": "Trainer",
     "subtype": "Item",
     "health": null,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Reveal Hand",
+        "effects": "Your opponent reveals their hand.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-004",
-    "name": "Pokedex",
+    "id": "p-a-004",
+    "name": "Poké Ball",
     "element": null,
     "type": "Trainer",
     "subtype": "Item",
     "health": null,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Gift",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Search",
+        "effects": "Flip a coin. If heads, search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-005",
-    "name": "Poke Ball",
+    "id": "p-a-005",
+    "name": "Pokédex",
     "element": null,
     "type": "Trainer",
     "subtype": "Item",
     "health": null,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Gift",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Look Ahead",
+        "effects": "Look at the top 5 cards of your deck and put them back in any order.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-006",
+    "id": "p-a-006",
     "name": "Red Card",
     "element": null,
     "type": "Trainer",
     "subtype": "Item",
     "health": null,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Hand Disruption",
+        "effects": "Your opponent shuffles their hand into their deck and draws 4 cards.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-007",
-    "name": "Professor's Research",
+    "id": "p-a-007",
+    "name": "Professor’s Research",
     "element": null,
     "type": "Trainer",
     "subtype": "Supporter",
     "health": null,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Research",
+        "effects": "Draw 2 cards.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-009",
+    "id": "p-a-008",
+    "name": "Pokédex",
+    "element": null,
+    "type": "Trainer",
+    "subtype": "Item",
+    "health": null,
+    "set": "Promo A (P-A)",
+    "pack": "Gift",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Look Ahead",
+        "effects": "Look at the top 3 cards of your deck.",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "id": "p-a-007",
+    "name": "Professor’s Research",
+    "element": null,
+    "type": "Trainer",
+    "subtype": "Supporter",
+    "health": null,
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Research",
+        "effects": "Draw 2 cards.",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "id": "p-a-008",
+    "name": "Pokédex",
+    "element": null,
+    "type": "Trainer",
+    "subtype": "Item",
+    "health": null,
+    "set": "Promo A (P-A)",
+    "pack": "Gift",
+    "rarity": "Promo",
+    "attacks": [],
+    "retreatCost": null,
+    "weakness": null,
+    "abilities": [
+      {
+        "name": "Look Ahead",
+        "effects": "Look at the top 3 cards of your deck.",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "id": "p-a-009",
     "name": "Pikachu",
     "element": "Lightning",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 60,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Gnaw",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
   },
   {
-    "id": "pa-010",
+    "id": "p-a-010",
     "name": "Mewtwo",
     "element": "Psychic",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 120,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Premium Pass",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Power Blast",
+        "effects": "Discard 2 Psychic Energy from this Pokémon.",
+        "damage": "120",
+        "cost": ["Psychic", "Psychic", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Darkness",
+    "abilities": []
   },
-  {
-    "id": "pa-011",
+    {
+    "id": "p-a-011",
     "name": "Chansey",
     "element": "Colorless",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 120,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Chansey Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Pound",
+        "effects": null,
+        "damage": "30",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Fighting",
+    "abilities": []
   },
   {
-    "id": "pa-012",
+    "id": "p-a-012",
     "name": "Meowth",
     "element": "Colorless",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 60,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Meowth Special Gift",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Scratch",
+        "effects": null,
+        "damage": "10",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
   },
   {
-    "id": "pa-013",
+    "id": "p-a-013",
     "name": "Butterfree",
     "element": "Grass",
     "type": "Pokemon",
     "subtype": "Stage 2",
     "health": 120,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Butterfree Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Whirlwind",
+        "effects": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon.",
+        "damage": "40",
+        "cost": ["Grass", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fire",
+    "abilities": []
   },
   {
-    "id": "pa-014",
+    "id": "p-a-014",
     "name": "Lapras ex",
     "element": "Water",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 140,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Lapras ex Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Aqua Edge",
+        "effects": null,
+        "damage": "60",
+        "cost": ["Water", "Colorless"]
+      },
+      {
+        "name": "Hydro Pump",
+        "effects": "This attack does 30 more damage for each Water Energy attached to this Pokémon.",
+        "damage": "50+",
+        "cost": ["Water", "Water", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Lightning",
+    "abilities": []
   },
   {
-    "id": "pa-015",
+    "id": "p-a-015",
     "name": "Pikachu",
     "element": "Lightning",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 60,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Pikachu Special Gift",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Thunder Shock",
+        "effects": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+        "damage": "20",
+        "cost": ["Lightning"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
   },
-  {
-    "id": "pa-016",
+    {
+    "id": "p-a-016",
     "name": "Clefairy",
-    "element": "Psychic",
+    "element": "Fairy",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 60,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Clefairy Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Moonlight",
+        "effects": null,
+        "damage": "10",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Steel",
+    "abilities": []
   },
   {
-    "id": "pa-017",
+    "id": "p-a-017",
     "name": "Mankey",
     "element": "Fighting",
     "type": "Pokemon",
     "subtype": "Basic",
-    "health": 60,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "health": 50,
+    "set": "Promo A (P-A)",
+    "pack": "Lapras ex Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Reckless Charge",
+        "effects": "This Pokémon also does 10 damage to itself.",
+        "damage": "30",
+        "cost": ["Fighting"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Psychic",
+    "abilities": []
   },
   {
-    "id": "pa-018",
+    "id": "p-a-018",
     "name": "Venusaur",
     "element": "Grass",
     "type": "Pokemon",
     "subtype": "Stage 2",
     "health": 160,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Venusaur Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Mega Drain",
+        "effects": "Heal 30 damage from this Pokémon.",
+        "damage": "80",
+        "cost": ["Grass", "Grass", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 3,
+    "weakness": "Fire",
+    "abilities": []
   },
   {
-    "id": "pa-019",
+    "id": "p-a-019",
     "name": "Greninja",
     "element": "Water",
     "type": "Pokemon",
     "subtype": "Stage 2",
     "health": 120,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Venusaur Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Mist Slash",
+        "effects": null,
+        "damage": "60",
+        "cost": ["Water", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": [
+      {
+        "name": "Water Shuriken",
+        "effects": "Once during your turn, you may do 20 damage to 1 of your opponent’s Pokémon.",
+        "cost": []
+      }
+    ]
   },
   {
-    "id": "pa-020",
+    "id": "p-a-020",
     "name": "Haunter",
-    "element": "Darkness",
+    "element": "Psychic",
     "type": "Pokemon",
     "subtype": "Stage 1",
     "health": 70,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Venusaur Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Surprise Attack",
+        "effects": "Flip a coin. If tails, this attack does nothing.",
+        "damage": "50",
+        "cost": ["Psychic", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Darkness",
+    "abilities": []
   },
-  {
-    "id": "pa-021",
+    {
+    "id": "p-a-021",
     "name": "Onix",
     "element": "Fighting",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 110,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Rock Throw",
+        "effects": null,
+        "damage": "40",
+        "cost": ["Fighting", "Colorless"]
+      }
+    ],
+    "retreatCost": 3,
+    "weakness": "Grass",
+    "abilities": []
   },
   {
-    "id": "pa-022",
+    "id": "p-a-022",
     "name": "Jigglypuff",
     "element": "Colorless",
     "type": "Pokemon",
     "subtype": "Basic",
     "health": 50,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Promo"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Sing",
+        "effects": "Your opponent’s Active Pokémon is now Asleep.",
+        "damage": null,
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Steel",
+    "abilities": []
   },
   {
-    "id": "a1-283",
-    "name": "Mew",
-    "element": "Psychic",
-    "type": "Psychic",
+    "id": "p-a-023",
+    "name": "Bulbasaur",
+    "element": "Grass",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 70,
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Vine Whip",
+        "effects": null,
+        "damage": "40",
+        "cost": ["Grass", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fire",
+    "abilities": []
+  },
+  {
+    "id": "p-a-024",
+    "name": "Magnemite",
+    "element": "Lightning",
+    "type": "Pokemon",
     "subtype": "Basic",
     "health": 60,
-    "craftingCost": null,
-    "set": "Promo",
-    "pack": "Promo A",
-    "rarity": "Immersive"
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Thunder Wave",
+        "effects": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
+        "damage": "20",
+        "cost": ["Lightning"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-025",
+    "name": "Moltres ex",
+    "element": "Fire",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Flare Blitz",
+        "effects": "Discard all Fire Energy from this Pokémon.",
+        "damage": "160",
+        "cost": ["Fire", "Fire", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Water",
+    "abilities": []
+  },
+  {
+    "id": "p-a-026",
+    "name": "Pikachu",
+    "element": "Lightning",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Gnaw",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-027",
+    "name": "Snivy",
+    "element": "Grass",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Leaf Blade",
+        "effects": null,
+        "damage": "30",
+        "cost": ["Grass"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fire",
+    "abilities": []
+  },
+  {
+    "id": "p-a-028",
+    "name": "Volcarona",
+    "element": "Fire",
+    "type": "Pokemon",
+    "subtype": "Stage 1",
+    "health": 120,
+    "set": "Promo A (P-A)",
+    "pack": "Shop",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Heat Cyclone",
+        "effects": null,
+        "damage": "90",
+        "cost": ["Fire", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Water",
+    "abilities": []
+  },
+    {
+    "id": "p-a-029",
+    "name": "Blastoise",
+    "element": "Water",
+    "type": "Pokemon",
+    "subtype": "Stage 2",
+    "health": 150,
+    "set": "Promo A (P-A)",
+    "pack": "Blastoise Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Hydro Pump",
+        "effects": "This attack does 20 more damage for each Water Energy attached to this Pokémon.",
+        "damage": "50+",
+        "cost": ["Water", "Water", "Colorless"]
+      }
+    ],
+    "retreatCost": 3,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-030",
+    "name": "Eevee",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Blastoise Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Quick Draw",
+        "effects": "Draw a card.",
+        "damage": null,
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-031",
+    "name": "Cinccino",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Stage 1",
+    "health": 90,
+    "set": "Promo A (P-A)",
+    "pack": "Blastoise Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Tail Slap",
+        "effects": "Flip 2 coins. This attack does 40 damage for each heads.",
+        "damage": "40x",
+        "cost": ["Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-032",
+    "name": "Charmander",
+    "element": "Fire",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Charmander & Squirtle Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Ember",
+        "effects": "Discard a Fire Energy from this Pokémon.",
+        "damage": "30",
+        "cost": ["Fire"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Water",
+    "abilities": []
+  },
+  {
+    "id": "p-a-033",
+    "name": "Squirtle",
+    "element": "Water",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Charmander & Squirtle Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Bubble",
+        "effects": "Flip a coin. If heads, the opponent’s Active Pokémon is now Paralyzed.",
+        "damage": "10",
+        "cost": ["Water"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-034",
+    "name": "Piplup",
+    "element": "Water",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Premium Pass (Feb 2025)",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Peck",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-035",
+    "name": "Turtwig",
+    "element": "Grass",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 80,
+    "set": "Promo A (P-A)",
+    "pack": "Cresselia EX Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Tackle",
+        "effects": null,
+        "damage": "30",
+        "cost": ["Grass"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Fire",
+    "abilities": []
+  },
+  {
+    "id": "p-a-036",
+    "name": "Electivire",
+    "element": "Lightning",
+    "type": "Pokemon",
+    "subtype": "Stage 1",
+    "health": 120,
+    "set": "Promo A (P-A)",
+    "pack": "Cresselia EX Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Thunder Punch",
+        "effects": "Flip a coin. If tails, this Pokémon does 20 damage to itself.",
+        "damage": "90",
+        "cost": ["Lightning", "Lightning", "Colorless"]
+      }
+    ],
+    "retreatCost": 3,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+    {
+    "id": "p-a-037",
+    "name": "Cresselia ex",
+    "element": "Psychic",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Cresselia EX Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Psychic Flash",
+        "effects": null,
+        "damage": "80",
+        "cost": ["Psychic", "Psychic", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Darkness",
+    "abilities": [
+      {
+        "name": "Lunar Plumage",
+        "effects": "Whenever you attach a Psychic Energy from your Energy Zone to this Pokémon, heal 20 damage from this Pokémon.",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "id": "p-a-038",
+    "name": "Misdreavus",
+    "element": "Psychic",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Cresselia EX Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Confuse Ray",
+        "effects": "Your opponent's Active Pokémon is now Confused.",
+        "damage": null,
+        "cost": ["Psychic"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Darkness",
+    "abilities": []
+  },
+  {
+    "id": "p-a-039",
+    "name": "Skarmory",
+    "element": "Metal",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 80,
+    "set": "Promo A (P-A)",
+    "pack": "Cresselia EX Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Steel Wing",
+        "effects": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks (after applying Weakness and Resistance).",
+        "damage": "30",
+        "cost": ["Metal", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fire",
+    "abilities": []
+  },
+  {
+    "id": "p-a-040",
+    "name": "Chimchar",
+    "element": "Fire",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Chimchar & Togepi Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Scratch",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Water",
+    "abilities": []
+  },
+  {
+    "id": "p-a-041",
+    "name": "Togepi",
+    "element": "Psychic",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 50,
+    "set": "Promo A (P-A)",
+    "pack": "Chimchar & Togepi Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Charm",
+        "effects": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn.",
+        "damage": null,
+        "cost": ["Psychic"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Steel",
+    "abilities": []
+  },
+  {
+    "id": "p-a-042",
+    "name": "Darkrai ex",
+    "element": "Darkness",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Triumphant Light Series",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Dark Pulse",
+        "effects": "This attack does 30 more damage for each Darkness Energy attached to all of your Pokémon.",
+        "damage": "60+",
+        "cost": ["Darkness", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Fighting",
+    "abilities": [
+      {
+        "name": "Shadow Guard",
+        "effects": "If this Pokémon has any Darkness Energy attached, it takes 20 less damage from attacks (after applying Weakness and Resistance).",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "id": "p-a-043",
+    "name": "Cherrim",
+    "element": "Grass",
+    "type": "Pokemon",
+    "subtype": "Stage 1",
+    "health": 80,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Petal Dance",
+        "effects": "Flip 3 coins. This attack does 40 damage for each heads.",
+        "damage": "40x",
+        "cost": ["Grass", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fire",
+    "abilities": []
+  },
+  {
+    "id": "p-a-044",
+    "name": "Raichu",
+    "element": "Lightning",
+    "type": "Pokemon",
+    "subtype": "Stage 1",
+    "health": 90,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Thunderbolt",
+        "effects": "Discard all Energy from this Pokémon.",
+        "damage": "100",
+        "cost": ["Lightning", "Lightning", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": [
+      {
+        "name": "Resilience Link",
+        "effects": "If you have Arceus or Arceus ex in play, this Pokémon takes 30 less damage from attacks.",
+        "cost": []
+      }
+    ]
+  },
+    {
+    "id": "p-a-045",
+    "name": "Nosepass",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Rock Throw",
+        "effects": "Flip a coin. If heads, this attack does 10 more damage.",
+        "damage": "30+",
+        "cost": ["Fighting"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Grass",
+    "abilities": []
+  },
+  {
+    "id": "p-a-046",
+    "name": "Gible",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Bite",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Grass",
+    "abilities": []
+  },
+  {
+    "id": "p-a-047",
+    "name": "Staraptor",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Stage 2",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Brave Bird",
+        "effects": "This Pokémon does 30 damage to itself.",
+        "damage": "130",
+        "cost": ["Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-048",
+    "name": "Manaphy",
+    "element": "Water",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 50,
+    "set": "Promo A (P-A)",
+    "pack": "Manaphy & Snorlax Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Aqua Ring",
+        "effects": "Switch this Pokémon with one of your Benched Pokémon.",
+        "damage": "30",
+        "cost": ["Water"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-049",
+    "name": "Snorlax",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Manaphy & Snorlax Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Body Slam",
+        "effects": "Flip a coin. If heads, the opponent's Active Pokémon is now Paralyzed.",
+        "damage": "100",
+        "cost": ["Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 4,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-050",
+    "name": "Shiny Mewtwo ex",
+    "element": "Psychic",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Shop (Poké Gold Bundle)",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Psy Surge",
+        "effects": "This attack does 20 damage to each of your opponent's Benched Pokémon.",
+        "damage": "60",
+        "cost": ["Psychic"]
+      },
+      {
+        "name": "Power Blast",
+        "effects": "Discard 2 Psychic Energy from this Pokémon.",
+        "damage": "120",
+        "cost": ["Psychic", "Psychic", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Darkness",
+    "abilities": []
+  },
+  {
+    "id": "p-a-051",
+    "name": "Cyclizar",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 110,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Quick Turn",
+        "effects": "Flip 2 coins. This attack does 30 damage for each heads.",
+        "damage": "30x",
+        "cost": ["Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+    {
+    "id": "p-a-045",
+    "name": "Nosepass",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 80,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Iron Defense",
+        "effects": "Flip a coin. If heads, during your opponent's next turn, prevent all damage done to this Pokémon by attacks.",
+        "damage": null,
+        "cost": ["Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Grass",
+    "abilities": []
+  },
+  {
+    "id": "p-a-046",
+    "name": "Gible",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Bite",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Grass",
+    "abilities": []
+  },
+  {
+    "id": "p-a-047",
+    "name": "Staraptor",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Stage 2",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Brave Bird",
+        "effects": "This Pokémon does 30 damage to itself.",
+        "damage": "130",
+        "cost": ["Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-048",
+    "name": "Manaphy",
+    "element": "Water",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 50,
+    "set": "Promo A (P-A)",
+    "pack": "Manaphy & Snorlax Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Oceanic Gift",
+        "effects": "Choose 2 of your Benched Pokémon. For each of those Pokémon, take a Water Energy from your Energy Zone and attach it to that Pokémon.",
+        "damage": null,
+        "cost": ["Water"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+    {
+    "id": "p-a-049",
+    "name": "Snorlax",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Manaphy & Snorlax Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Collapse",
+        "effects": "This Pokémon is now Asleep.",
+        "damage": "100",
+        "cost": ["Colorless", "Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 4,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-050",
+    "name": "Shiny Mewtwo ex",
+    "element": "Psychic",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Shop (Poké Gold Bundle)",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Psychic Sphere",
+        "effects": "Discard a random card from your opponent’s hand.",
+        "damage": "50",
+        "cost": ["Psychic", "Colorless"]
+      },
+      {
+        "name": "Psydrive",
+        "effects": null,
+        "damage": "150",
+        "cost": ["Psychic", "Psychic", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Darkness",
+    "abilities": []
+  },
+  {
+    "id": "p-a-051",
+    "name": "Cyclizar",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 80,
+    "set": "Promo A (P-A)",
+    "pack": "ex Starter Deck Missions",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Overacceleration",
+        "effects": "During your next turn, this Pokemon's Overacceleration attack does +20 damage.",
+        "damage": "40",
+        "cost": ["Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-052",
+    "name": "Sprigatito",
+    "element": "Grass",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Premium Pass (March 2025)",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Cry for Help",
+        "effects": "Put 1 random Grass Pokémon from your deck into your hand.",
+        "damage": null,
+        "cost": ["Grass"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fire",
+    "abilities": []
+  },
+  {
+    "id": "p-a-053",
+    "name": "Floatzel",
+    "element": "Water",
+    "type": "Pokemon",
+    "subtype": "Stage 1",
+    "health": 100,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Attack the Wound",
+        "effects": "If your opponent's Active Pokémon has any damage on it, this attack does 60 more damage.",
+        "damage": "10+",
+        "cost": ["Water"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-054",
+    "name": "Pawmot",
+    "element": "Lightning",
+    "type": "Pokemon",
+    "subtype": "Stage 2",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Electric Punch",
+        "effects": null,
+        "damage": "70",
+        "cost": ["Lightning", "Lightning"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": [
+      {
+        "name": "Counterattack",
+        "effects": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon, do 20 damage to the Attacking Pokémon.",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "id": "p-a-055",
+    "name": "Machamp",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Stage 2",
+    "health": 160,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Power Press",
+        "effects": "If this Pokémon has any damage counters on it, this attack does 60 more damage.",
+        "damage": "60+",
+        "cost": ["Fighting", "Colorless"]
+      }
+    ],
+    "retreatCost": 3,
+    "weakness": "Psychic",
+    "abilities": []
+  },
+  {
+    "id": "p-a-056",
+    "name": "Ekans",
+    "element": "Darkness",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Poison Sting",
+        "effects": "Your opponent's Active Pokémon is now Poisoned.",
+        "damage": "10",
+        "cost": ["Darkness"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Psychic",
+    "abilities": []
+  },
+    {
+    "id": "p-a-057",
+    "name": "Bidoof",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 70,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Headbutt",
+        "effects": null,
+        "damage": "30",
+        "cost": ["Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-058",
+    "name": "Pachirisu",
+    "element": "Lightning",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 70,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Plasma",
+        "effects": "Take 1 Lightning Energy from your Energy Zone and attach it to 1 of your Benched Lightning Pokémon.",
+        "damage": "10",
+        "cost": ["Lightning"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-059",
+    "name": "Riolu",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 70,
+    "set": "Promo A (P-A)",
+    "pack": "Pawmot Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Punch",
+        "effects": null,
+        "damage": "30",
+        "cost": ["Fighting", "Fighting" ]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Psychic",
+    "abilities": []
   }
-]
+ ]

@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Pallet Town TCG Viewer</title>
-  <link rel="stylesheet" href="style.css" />  <!-- ✅ External CSS link (this is correct) -->
-</head>
-<body>
-  <h1>Hello from Pallet Town 🧪</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTCGP ROAD TO MASTERS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Image (Fixed behind content) -->
+    <img id="bg-img" src="images/bg.jpg" alt="Background" />
 
-  <!-- ✅ This is where cards get injected -->
-  <div id="card-list"></div>
+    <!-- Main centered container -->
+    <div class="main-container">
+      <!-- Site Title -->
+      <h1>PTCGP ROAD TO MASTERS</h1>
 
-  <!-- ✅ Optional: Add a search bar -->
-  <!-- <input type="text" id="search" placeholder="Search by name..."> -->
+      <!-- Homepage Sections: Contains both the sets grid and the battle sim block -->
+      <div id="homepage-sections">
+        <!-- Sets Section -->
+        <div id="sets-section">
+          <div id="set-grid">
+            <!-- Set buttons are injected here via JS -->
+          </div>
+        </div>
 
-  <script src="app.js"></script>  <!-- ✅ Load your main JS logic -->
-</body>
+        <!-- Battle Sim Section (remains on homepage) -->
+        <div id="battle-section">
+          <div id="battle-sim-block">
+            <a href="battleground.html" class="battle-link">
+              <img
+                src="images/battle-sim.png"
+                alt="Battle Simulator"
+                class="set-cover"
+              />
+              <!-- The Start Battle button will be hidden via CSS -->
+              <button class="btn">Start Battle</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back Button (hidden by default) -->
+      <button id="back-button" class="btn" style="display: none;">
+        ← Back to Sets
+      </button>
+
+      <!-- Card List Container (hidden by default, styled separately) -->
+      <div id="card-list" style="display: none;">
+        <!-- Cards for a selected set will be injected here via JS -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
 

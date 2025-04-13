@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTCGP Road to Masters</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <img id="bg-img" src="images/bg.jpg" alt="Background" />
+  <div class="app-container">
+    <h1>PTCGP Road to Masters</h1>
+
+    <!-- Homepage Section with cards and battle sim -->
+    <div id="homepage-sections">
+      <!-- Set Section (2 columns) -->
+      <div id="sets-section">
+        <div id="set-grid"></div>
+      </div>
+
+      <!-- Battle Sim Section -->
+      <div id="battle-section">
+        <div class="battle-banner">Battle Sim</div>
+        <div id="battle-sim-block">
+          <a href="battleground.html" class="battle-link">
+            <img src="images/battle-sim.png" alt="Battle Simulator" class="set-cover" />
+            <button>Start Battle</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional Back Button -->
+    <button id="back-button" style="display:none;">← Back to Sets</button>
+    <div id="card-list" style="display:none;"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

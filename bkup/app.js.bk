@@ -1,0 +1,87 @@
+let allCards = [];
+
+async function init() {
+  const res = await fetch('data/all_cards.json');
+  allCards = await res.json();
+  const sets = getUniqueSets(allCards);
+  renderSetGrid(sets);
+}
+
+function getUniqueSets(cards) {
+  const setMap = new Map();
+  cards.forEach(card => {
+    if (!setMap.has(card.set)) {
+      setMap.set(card.set, card.set);
+    }
+  });
+  return Array.from(setMap.values());
+}
+
+function renderSetGrid(sets) {
+  const container = document.getElementById('set-grid');
+  container.innerHTML = '';
+
+  sets.forEach(setName => {
+    // Create wrapper div
+    const div = document.createElement('div');
+    div.className = 'set-button-container';
+
+    // Create image element for set cover
+    const img = document.createElement('img');
+    const setId = setName.match(/\((.*?)\)/)?.[1].toLowerCase(); // Extracts "a1", "a2a", etc.
+    img.src = `images/${setId}/cover.webp`;
+    img.alt = `${setName} Cover`;
+    img.className = 'set-cover';
+
+    // Create button element
+    const btn = document.createElement('button');
+    btn.innerText = setName;
+    btn.onclick = () => showCardsForSet(setName);
+
+    // Assemble
+    div.appendChild(img);
+    div.appendChild(btn);
+    container.appendChild(div);
+  });
+}
+
+function showCardsForSet(setName) {
+  document.getElementById('set-grid').style.display = 'none';
+  document.getElementById('back-button').style.display = 'block';
+  document.getElementById('card-list').style.display = 'flex';
+
+  const filtered = allCards.filter(card => card.set === setName);
+  renderCardList(filtered);
+}
+
+function renderCardList(cards) {
+  const container = document.getElementById('card-list');
+  container.innerHTML = '';
+
+  cards.forEach(card => {
+    const div = document.createElement('div');
+    div.className = 'card-container';
+
+    const img = document.createElement('img');
+    const id = card.id.toLowerCase().replace('_', '-'); // Normalize underscore to dash
+    const setFolder = id.split('-')[0]; // Will now correctly extract "a2", "a2a", etc.
+    img.src = `images/${setFolder}/${id}.webp`;
+    img.alt = card.name;
+
+    const p = document.createElement('p');
+    p.innerText = `${card.name} (${card.rarity})`;
+
+    div.appendChild(img);
+    div.appendChild(p);
+    container.appendChild(div);
+  });
+}
+
+document.getElementById('back-button').onclick = () => {
+  document.getElementById('set-grid').style.display = 'flex';
+  document.getElementById('back-button').style.display = 'none';
+  document.getElementById('card-list').style.display = 'none';
+};
+
+init();
+

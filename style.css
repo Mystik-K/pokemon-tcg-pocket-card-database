@@ -1,31 +1,224 @@
-body {
-  background: #111;
-  color: #eee;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 20px;
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Body styling */
+body {
+  font-family: sans-serif;
+  background: #000; /* fallback dark background since image is fixed */
+}
+
+/* Main Container (centers content and limits maximum width) */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Make sure content sits above the background */
+}
+
+/* Title Styling */
 h1 {
+  font-family: 'Impact', cursive;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
+/* Background Image (fixed behind content) */
+#bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  filter: brightness(80%) contrast(1.2);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Homepage Sections Container */
+#homepage-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Both sections get similar widths on desktop */
+@media (min-width: 768px) {
+  #sets-section,
+  #battle-section {
+    flex: 1 1 45%;
+  }
+}
+
+/* On smaller screens, each section takes full width */
+@media (max-width: 767px) {
+  #sets-section,
+  #battle-section {
+    width: 100%;
+  }
+}
+
+/* Sets Section */
+#sets-section {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Dynamic Set Grid: Automatically wraps new sets */
+#set-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+/* Each Set Button Container */
+.set-button-container {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: transparent;
+  text-align: center;
+}
+
+/* Uniform Set Cover Images */
+.set-cover {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Battle Sim Section */
+#battle-section {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Battle Sim Block: set to a fixed height to roughly match sets */
+#battle-sim-block {
+  width: 100%;
+  height: 580px;     /* This value can be adjusted to match expected sets grid height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Battle Link: the clickable container for battle image */
+.battle-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Battle Image: fills container and uses object-fit to crop appropriately */
+.battle-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Hide the Start Battle button */
+.battle-link .btn {
+  display: none;
+}
+
+/* Back button styling (if needed) */
+#back-button {
+  margin: 20px auto;
+  display: block;
+  max-width: 200px;
+}
+
+/* Optional Card List styling for when a set is selected */
 #card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.card-container {
-  background-color: #1c1c1c;
-  border: 1px solid #333;
-  padding: 10px;
+/* Card List Grid: show many cards in a fluid layout */
+#card-list {
+  /* We'll turn it into a grid once it's displayed = "grid" in JS. */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 5px;
+  justify-items: center;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  text-align: center;
-  width: 200px;
+  backdrop-filter: blur(2px);
+  /* If you want a subtle background or border, feel free to add them here. */
 }
 
+/* Each card container can have its own styling */
+.card-container {
+  width: 100%;
+  max-width: 220px;               /* or 200px, adjust to taste */
+  text-align: center;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* The card image gets auto-sized */
 .card-container img {
   width: 100%;
-  border-radius: 6px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+/* Ensure rarity icons are small and aligned horizontally */
+.rarity-icon {
+  max-width: 16px;              /* Maximum width */
+  max-height: 16px;             /* Maximum height */
+  width: auto;                  /* Preserve aspect ratio */
+  height: auto;                 /* Preserve aspect ratio */
+  vertical-align: middle;       /* Align them with text/number */
+  margin: 0 2px;                /* Add some space between icons */
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5)); /* Optional shadow */
+  display: inline-block;        /* Ensure they are aligned horizontally */
+}
+
+.card-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 

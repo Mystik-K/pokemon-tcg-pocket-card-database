@@ -1,0 +1,113 @@
+let allCards = [];
+
+async function init() {
+  // Fetch the card data
+  const res = await fetch('data/all_cards.json');
+  allCards = await res.json();
+  const sets = getUniqueSets(allCards);
+  renderSetGrid(sets);
+}
+
+function getUniqueSets(cards) {
+  // Get unique sets by extracting the set names
+  const setMap = new Map();
+  cards.forEach(card => {
+    if (!setMap.has(card.set)) {
+      setMap.set(card.set, card.set);
+    }
+  });
+  return Array.from(setMap.values()); // Return unique set names
+}
+
+function renderSetGrid(sets) {
+  const container = document.getElementById('set-grid');
+  container.innerHTML = ''; // Clear existing set grid content
+
+  sets.forEach(setName => {
+    // Create wrapper div for each set
+    const div = document.createElement('div');
+    div.className = 'set-button-container';
+
+    // Create anchor tag to wrap the set (making the whole block clickable)
+    const a = document.createElement('a');
+    a.href = '#';  // You can adjust this to a specific link or # for now
+    a.className = 'set-link';
+
+    // Create image element for the set cover
+    const img = document.createElement('img');
+    const setId = setName.match(/\((.*?)\)/)?.[1].toLowerCase(); // Extracts "a1", "a2a", etc.
+    img.src = `images/${setId}/cover.webp`;
+    img.alt = `${setName} Cover`;
+    img.className = 'set-cover';
+
+    // Create button element for the set name
+    const btn = document.createElement('button');
+    btn.innerText = setName;
+
+    // Append the image and button to the anchor
+    a.appendChild(img);
+    a.appendChild(btn);
+
+    // Add click handler to the anchor (clicking the whole block will trigger the function)
+    a.onclick = () => showCardsForSet(setName);
+
+    // Append the anchor to the set container
+    div.appendChild(a);
+    container.appendChild(div);
+  });
+}
+
+
+function showCardsForSet(setName) {
+  document.getElementById('set-grid').style.display = 'none';
+  document.getElementById('back-button').style.display = 'block';
+  document.getElementById('card-list').style.display = 'flex';
+  document.title = `${setName} - PTCGP Road to Masters`; // Dynamic title
+
+  const filtered = allCards.filter(card => card.set === setName);
+  renderCardList(filtered);
+}
+
+document.getElementById('back-button').onclick = () => {
+  document.getElementById('set-grid').style.display = 'flex';
+  document.getElementById('back-button').style.display = 'none';
+  document.getElementById('card-list').style.display = 'none';
+  document.title = 'PTCGP Road to Masters'; // Reset title on back
+};
+
+function renderCardList(cards) {
+  const container = document.getElementById('card-list');
+  container.innerHTML = ''; // Clear existing card list content
+
+  cards.forEach(card => {
+    const div = document.createElement('div');
+    div.className = 'card-container';
+
+    const img = document.createElement('img');
+    const id = card.id.toLowerCase().replace('_', '-'); // Normalize underscore to dash
+    const setFolder = id.split('-')[0]; // Extract set folder (e.g., "a1", "a2a")
+    img.src = `images/${setFolder}/${id}.webp`;
+    img.alt = card.name;
+
+    const p = document.createElement('p');
+    //p.innerHTML = `${card.name} <br><strong>(${card.rarity})</strong>`;  // Add name and rarity in a paragraph
+    div.appendChild(p);  // Keep this line to preserve layout structure
+
+    div.appendChild(img);
+    div.appendChild(p); // Make sure this is added
+
+    container.appendChild(div);
+  });
+}
+
+document.getElementById('back-button').onclick = () => {
+  document.getElementById('set-grid').style.display = 'grid';
+  document.getElementById('set-grid').style.justifyContent = 'center';
+  document.getElementById('back-button').style.display = 'none';
+  document.getElementById('card-list').style.display = 'none';
+  document.title = 'PTCGP Road to Masters';
+};
+
+// Initialize the app on load
+init();
+

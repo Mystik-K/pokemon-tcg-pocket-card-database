@@ -1,0 +1,193 @@
+document.addEventListener('DOMContentLoaded', function () {
+  let allCards = [];
+
+  // Mapping between set names (as they appear in the JSON) and their associated cards folder and set-logo image.
+  const setMappings = {
+    "Genetic Apex (A1)": {
+      cardsFolder: "a1",
+      ilogo: "images/a1/a1-set-logo.png"
+    },
+    "Mythical Island (A1a)": {
+      cardsFolder: "a1a",
+      logo: "a1a/a1a-set-logo.png"
+    },
+    "Space-Time Smackdown (A2)": {
+      cardsFolder: "a2",
+      logo: "a2/a2-set-logo.png"
+    },
+    "Triumphant light (A2a)": {
+      cardsFolder: "a2a",
+      logo: "a2a/a2a-set-logo.png"
+    },
+    "Shining Revelry (A2b)": {
+      cardsFolder: "a2b",
+      logo: "a2b/a2b-set-logo.png"
+    },
+    "Promo A (P-A)": {
+      cardsFolder: "pa",
+      logo: "pa/pa-set-logo.png"
+    }
+  };
+
+  // Cache frequently used DOM elements.
+  const setGrid = document.getElementById('set-grid');
+  const cardList = document.getElementById('card-list');
+  const backButton = document.getElementById('back-button');
+  const headerTitle = document.querySelector('h1');
+  const mainContainer = document.querySelector('.main-container');
+  const homepageSections = document.getElementById('homepage-sections');
+
+  // Fetch card data from all_cards.json.
+  fetch('data/all_cards.json')
+    .then(response => response.json())
+    .then(data => {
+      allCards = data;
+      populateSetButtons(allCards);
+    })
+    .catch(error => console.error('Error fetching card data:', error));
+
+function populateSetButtons(cards) {
+  const setNames = [...new Set(cards.map(card => card.set))];
+  setGrid.innerHTML = '';
+
+  setNames.forEach(setName => {
+    // Make sure we have a mapping for the set.
+    if (!setMappings[setName]) return;
+    const mapping = setMappings[setName]; // mapping should contain at least { cardsFolder: "a1" }
+
+    // Create one <button> element for the entire clickable set.
+    const btn = document.createElement('button');
+    btn.className = 'set-button-container';
+
+    // Optionally, create a cover image (if you want a background cover image)
+    const coverImg = document.createElement('img');
+    coverImg.className = 'set-cover';
+    coverImg.src = `images/${mapping.cardsFolder}/cover.webp`;
+    coverImg.alt = setName;
+    btn.appendChild(coverImg);
+
+    // Create the set logo image.
+    // It uses your folder name: for a1 the logo is at images/a1/a1-set-logo.png, and so on.
+    const logoImg = document.createElement('img');
+    logoImg.className = 'set-logo'; // Style this class in style.css as needed.
+    logoImg.src = `images/${mapping.cardsFolder}/${mapping.cardsFolder}-set-logo.png`;
+    logoImg.alt = `${setName} Logo`;
+    btn.appendChild(logoImg);
+
+    // Add a click listener to the entire button.
+    btn.addEventListener('click', () => {
+      displayCardsForSet(setName);
+    });
+
+    setGrid.appendChild(btn);
+  });
+}
+
+
+
+  // Map rarity text to an icon file path.
+  function getRarityIcon(rarity) {
+    const rarityMap = {
+      "Common": "images/rarity/common.webp",
+      "Uncommon": "images/rarity/uncommon.webp",
+      "Rare": "images/rarity/rare.webp",
+      "Rare EX": "images/rarity/rare-ex.webp",
+      "Full Art": "images/rarity/full-art.webp",
+      "Full Art EX/Support": "images/rarity/full-art-ex-support.webp",
+      "Immersive": "images/rarity/immersive.webp",
+      "Gold Crown": "images/rarity/gold-crown.webp"
+    };
+    return rarityMap[rarity] || "";
+  }
+
+  // Update header to display the set-specific logo.
+  function updateHeaderForSet(setName) {
+    headerTitle.style.display = 'none'; // Hide default title.
+    let setLogo = document.querySelector('.set-theme-logo');
+    if (!setLogo) {
+      setLogo = document.createElement('img');
+      setLogo.className = 'set-theme-logo';
+      // Insert the set logo above the homepage sections.
+      mainContainer.insertBefore(setLogo, homepageSections);
+    }
+    setLogo.src = setMappings[setName].logo;
+    setLogo.alt = `${setName} Logo`;
+  }
+
+  // Filter the cards and display those that belong to the selected set.
+  function displayCardsForSet(setName) {
+    updateHeaderForSet(setName);
+
+    // Hide homepage sections.
+    document.getElementById('sets-section').style.display = 'none';
+    document.getElementById('battle-section').style.display = 'none';
+    backButton.style.display = 'block';
+    cardList.style.display = 'grid';
+    cardList.innerHTML = '';
+
+    // Get folder from mapping.
+    const folder = setMappings[setName].cardsFolder;
+    // Filter cards that match the set.
+    const filteredCards = allCards.filter(card => card.set === setName);
+    if (filteredCards.length === 0) {
+      cardList.textContent = 'No cards found for this set.';
+      return;
+    }
+    filteredCards.forEach(card => {
+      const cardContainer = document.createElement('div');
+      cardContainer.className = 'card-container';
+
+      // Determine which folder to load the card image from.
+      // If card id starts with "a1a-" use folder "a1a", if "a1-" use folder "a1", otherwise default to the mapped folder.
+      let cardsFolder = "";
+      if (card.id.startsWith('a1a-')) {
+        cardsFolder = "a1a";
+      } else if (card.id.startsWith('a1-')) {
+        cardsFolder = "a1";
+      } else {
+        cardsFolder = folder;
+      }
+      const cardImg = document.createElement('img');
+      const fixedCardId = card.id.replace(/_/g, "-");
+      cardImg.src = `images/${cardsFolder}/${fixedCardId}.webp`;
+      cardImg.alt = card.name;
+
+      // Create info container for the card's id and rarity icon.
+      const infoDiv = document.createElement('div');
+      infoDiv.className = 'card-info';
+      const idSpan = document.createElement('span');
+      idSpan.className = 'card-number';
+      idSpan.textContent = card.id;
+
+      const rarityPath = getRarityIcon(card.rarity);
+      if (rarityPath) {
+        const rarityIcon = document.createElement('img');
+        rarityIcon.className = 'rarity-icon';
+        rarityIcon.src = rarityPath;
+        rarityIcon.alt = card.rarity;
+        idSpan.appendChild(rarityIcon);
+      }
+      infoDiv.appendChild(idSpan);
+      cardContainer.appendChild(cardImg);
+      cardContainer.appendChild(infoDiv);
+
+      cardList.appendChild(cardContainer);
+    });
+  }
+
+  // Handler for back button to restore the homepage view.
+  backButton.addEventListener('click', function () {
+    document.getElementById('sets-section').style.display = 'block';
+    document.getElementById('battle-section').style.display = 'block';
+    cardList.style.display = 'none';
+    backButton.style.display = 'none';
+
+    // Remove the set logo if it exists.
+    const setLogo = document.querySelector('.set-theme-logo');
+    if (setLogo) {
+      setLogo.remove();
+    }
+    headerTitle.style.display = 'block';
+  });
+});
+

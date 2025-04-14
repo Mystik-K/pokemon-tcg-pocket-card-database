@@ -1,126 +1,175 @@
-let allCards = [];
+// Refactored app.js with clearer structure and futureproofing
 
-async function init() {
-  // Fetch the card data
-  try {
-    const res = await fetch('data/all_cards.json');
-    if (!res.ok) throw new Error('Failed to fetch cards');
-    allCards = await res.json();
-    const sets = getUniqueSets(allCards);
-    renderSetGrid(sets);
-  } catch (error) {
-    console.error('Error loading cards:', error);
+document.addEventListener('DOMContentLoaded', function () {
+  const DOM = {
+    setGrid: document.getElementById('set-grid'),
+    cardList: document.getElementById('card-list'),
+    backButton: document.getElementById('back-button'),
+    headerTitle: document.querySelector('h1'),
+    mainContainer: document.querySelector('.main-container'),
+    homepageSections: document.getElementById('homepage-sections'),
+    setsSection: document.getElementById('sets-section'),
+    battleSection: document.getElementById('battle-section'),
+  };
+
+  const setMappings = {
+    "Genetic Apex (A1)": { cardsFolder: "a1" },
+    "Mythical Island (A1a)": { cardsFolder: "a1a" },
+    "Space-Time Smackdown (A2)": { cardsFolder: "a2" },
+    "Triumphant light (A2a)": { cardsFolder: "a2a" },
+    "Shining Revelry (A2b)": { cardsFolder: "a2b" },
+    "Promo A (P-A)": { cardsFolder: "pa" }
+  };
+
+  let allCards = [];
+
+  // --- Helper Functions ---
+
+  function extractCardNumber(cardID) {
+    const normalized = cardID.replace(/_/g, '-');
+    const parts = normalized.split('-');
+    return parts[parts.length - 1];
   }
-}
 
-function getUniqueSets(cards) {
-  const setMap = new Map();
-  cards.forEach(card => {
-    if (!setMap.has(card.set)) {
-      setMap.set(card.set, card.set);
+  function getRarityImages(rarity) {
+    const rarityMapping = {
+      "Common": { icon: "diamond.png", count: 1 },
+      "Uncommon": { icon: "diamond.png", count: 2 },
+      "Rare": { icon: "diamond.png", count: 3 },
+      "Rare EX": { icon: "diamond.png", count: 4 },
+      "Full Art": { icon: "star.png", count: 1 },
+      "Full Art EX/Support": { icon: "star.png", count: 2 },
+      "Immersive": { icon: "star.png", count: 3 },
+      "Gold Crown": { icon: "crown.png", count: 1 },
+      "one star shiny": { icon: "shiny.png", count: 1 },
+      "One shiny star": { icon: "shiny.png", count: 1 },
+      "two star shiny": { icon: "shiny.png", count: 2 },
+      "Two shiny star": { icon: "shiny.png", count: 2 },
+      "Promo": { icon: "promo.png", count: 1 }
+    };
+    const mapping = rarityMapping[rarity];
+    if (!mapping) return null;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'rarity-wrapper';
+    for (let i = 0; i < mapping.count; i++) {
+      const iconImg = document.createElement('img');
+      iconImg.src = `images/rarity/${mapping.icon}`;
+      iconImg.alt = rarity;
+      iconImg.className = 'rarity-icon';
+      wrapper.appendChild(iconImg);
     }
-  });
-  return Array.from(setMap.values());
-}
+    return wrapper;
+  }
 
-function renderSetGrid(sets) {
-  const container = document.getElementById('set-grid');
-  container.innerHTML = ''; // Clear any existing content
+  function updateHeaderForSet(setName) {
+    DOM.headerTitle.style.display = 'none';
+    let setLogo = document.querySelector('.set-theme-logo');
+    if (!setLogo) {
+      setLogo = document.createElement('img');
+      setLogo.className = 'set-theme-logo';
+      DOM.mainContainer.insertBefore(setLogo, DOM.homepageSections);
+    }
+    const mapping = setMappings[setName];
+    setLogo.src = `images/${mapping.cardsFolder}/${mapping.cardsFolder}-set-logo.png`;
+    setLogo.alt = `${setName} Logo`;
+  }
 
-  sets.forEach(setName => {
-    const div = document.createElement('div');
-    div.className = 'set-button-container';
+  function showHomeSections() {
+    DOM.setsSection.style.display = 'block';
+    DOM.battleSection.style.display = 'block';
+    DOM.cardList.style.display = 'none';
+    DOM.backButton.style.display = 'none';
+    DOM.headerTitle.style.display = 'block';
 
-    const a = document.createElement('a');
-    a.href = '#';
-    a.className = 'set-link';
+    const setLogo = document.querySelector('.set-theme-logo');
+    if (setLogo) setLogo.remove();
+  }
 
-    const img = document.createElement('img');
-    const setId = setName.match(/\((.*?)\)/)?.[1].toLowerCase();
-    img.src = `images/${setId}/cover.webp`;
-    img.alt = `${setName} Cover`;
-    img.className = 'set-cover';
+  function showCardList() {
+    DOM.setsSection.style.display = 'none';
+    DOM.battleSection.style.display = 'none';
+    DOM.cardList.style.display = 'grid';
+    DOM.backButton.style.display = 'block';
+  }
 
-    const span = document.createElement('span');
-    span.innerText = setName;
+  // --- Rendering Functions ---
 
-    a.appendChild(img);
-    a.appendChild(span);
+  function populateSetButtons(cards) {
+    const setNames = [...new Set(cards.map(card => card.set))];
+    DOM.setGrid.innerHTML = '';
 
-    a.onclick = () => showCardsForSet(setName);
+    setNames.forEach(setName => {
+      if (!setMappings[setName]) return;
+      const mapping = setMappings[setName];
 
-    div.appendChild(a);
-    container.appendChild(div);
-  });
-}
+      const btn = document.createElement('button');
+      btn.className = 'set-button-container';
 
-function showCardsForSet(setName) {
-  document.getElementById('homepage-sections').style.display = 'none';
-  document.getElementById('back-button').style.display = 'block';
-  document.getElementById('card-list').style.display = 'grid';
+      const coverImg = document.createElement('img');
+      coverImg.className = 'set-cover';
+      coverImg.src = `images/${mapping.cardsFolder}/cover.webp`;
+      coverImg.alt = setName;
+      btn.appendChild(coverImg);
 
-  document.title = `${setName} - PTCGP Road to Masters`;
+      const logoImg = document.createElement('img');
+      logoImg.className = 'set-logo';
+      logoImg.src = `images/${mapping.cardsFolder}/${mapping.cardsFolder}-set-logo.png`;
+      logoImg.alt = `${setName} Logo`;
+      btn.appendChild(logoImg);
 
-  const filtered = allCards.filter(card => card.set === setName);
-  renderCardList(filtered);
-}
+      btn.addEventListener('click', () => displayCardsForSet(setName));
+      DOM.setGrid.appendChild(btn);
+    });
+  }
 
-document.getElementById('back-button').onclick = () => {
-  document.getElementById('homepage-sections').style.display = 'flex';
-  document.getElementById('back-button').style.display = 'none';
-  document.getElementById('card-list').style.display = 'none';
+  function displayCardsForSet(setName) {
+    updateHeaderForSet(setName);
+    showCardList();
 
-  document.title = 'PTCGP Road to Masters';
-};
+    const folder = setMappings[setName].cardsFolder;
+    const filteredCards = allCards.filter(card => card.set === setName);
 
-function renderCardList(cards) {
-  const container = document.getElementById('card-list');
-  container.innerHTML = ''; // Clear any existing card content
+    DOM.cardList.innerHTML = filteredCards.length === 0 ? 'No cards found.' : '';
 
-  cards.forEach(card => {
-    const div = document.createElement('div');
-    div.className = 'card-container';
+    filteredCards.forEach(card => {
+      const cardContainer = document.createElement('div');
+      cardContainer.className = 'card-container';
 
-    const img = document.createElement('img');
-    const id = card.id.toLowerCase().replace('_', '-');
-    const setFolder = card.set.match(/\((.*?)\)/)?.[1]?.toLowerCase();
-    img.src = `images/${setFolder}/${id}.webp`;
-    img.alt = card.name;
+      const cardImg = document.createElement('img');
+      const fixedCardId = card.id.replace(/_/g, "-");
+      const cardsFolder = card.id.startsWith("a1a-") ? "a1a" : card.id.startsWith("a1-") ? "a1" : folder;
+      cardImg.src = `images/${cardsFolder}/${fixedCardId}.webp`;
+      cardImg.alt = card.name;
 
-    const p = document.createElement('p');
-    const icons = getRarityIcons(card.rarity);
-    const number = card.id.match(/(\d+)$/)?.[1] || '???';
-    p.innerHTML = `<span class="card-number">${number}</span><br>${icons}`;
+      const label = document.createElement('div');
+      label.className = 'card-label';
 
-    div.appendChild(img);
-    div.appendChild(p);
-    container.appendChild(div);
-  });
-}
+      const number = document.createElement('div');
+      number.className = 'card-number';
+      number.textContent = extractCardNumber(card.id);
 
-function getRarityIcons(rarity) {
-  const r = rarity.toLowerCase();
+      const rarityIcons = getRarityImages(card.rarity);
+      if (rarityIcons) {
+        label.appendChild(number);
+        label.appendChild(rarityIcons);
+      }
 
-  const icon = (src, count = 1) =>
-    Array(count)
-      .fill(`<img src="images/rarity/${src}" class="rarity-icon" alt="${rarity}">`)
-      .join('');
+      cardContainer.appendChild(cardImg);
+      cardContainer.appendChild(label);
+      DOM.cardList.appendChild(cardContainer);
+    });
+  }
 
-  if (r.includes('double shiny')) return icon('shiny.png', 2);
-  if (r.includes('shiny')) return icon('shiny.png');
-  if (r.includes('gold crown')) return icon('crown.png');
-  if (r.includes('immersive')) return icon('star.png', 3);
-  if (r.includes('full art ex') || r.includes('support')) return icon('star.png', 2);
-  if (r.includes('full art')) return icon('star.png');
-  if (r.includes('rare ex')) return icon('diamond.png', 4);
-  if (r.includes('rare')) return icon('diamond.png', 3);
-  if (r.includes('uncommon')) return icon('diamond.png', 2);
-  if (r.includes('common')) return icon('diamond.png', 1);
-  if (r.includes('promo')) return icon('promo.png');
+  // --- Initialize ---
 
-  return rarity; // fallback
-}
+  DOM.backButton.addEventListener('click', showHomeSections);
 
-// Initialize the app
-init();
-
+  fetch('data/all_cards.json')
+    .then(res => res.json())
+    .then(data => {
+      allCards = data;
+      populateSetButtons(data);
+    })
+    .catch(err => console.error('Error loading cards:', err));
+});

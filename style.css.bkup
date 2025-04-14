@@ -15,9 +15,9 @@ body {
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   position: relative;
-  z-index: 1; /* Ensure content sits above the background */
+  z-index: 1; /* Make sure content sits above the background */
 }
 
 /* Title Styling */
@@ -76,7 +76,7 @@ h1 {
 /* Sets Section */
 #sets-section {
   background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 20px;
 }
 
@@ -91,7 +91,7 @@ h1 {
 
 /* Each Set Button Container */
 .set-button-container {
-  /* width: 300px; */
+  width: 300px;
   cursor: pointer;
   border-radius: 12px;
   overflow: hidden;
@@ -111,22 +111,6 @@ h1 {
   display: block;
 }
 
-/* Set Button Logo - used within set buttons */
-.set-logo {
-  width: 100px;           /* Fixed size to match design */
-  max-width: 100px;
-  height: auto;
-  margin-top: 8px;
-}
-
-/* Header Set Logo (inserted dynamically by app.js) */
-.set-theme-logo {
-  display: block;
-  max-width: 440px;       /* Allow header logo to be larger */
-  width: 100%;
-  margin: 0 auto 20px;    /* Centered with bottom margin */
-}
-
 /* Battle Sim Section */
 #battle-section {
   background-color: rgba(255, 255, 255, 0.05);
@@ -140,14 +124,14 @@ h1 {
 /* Battle Sim Block: set to a fixed height to roughly match sets */
 #battle-sim-block {
   width: 100%;
-  height: 580px;     /* Adjust height as needed */
+  height: 580px;     /* This value can be adjusted to match expected sets grid height */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-/* Battle Link: clickable container for battle image */
+/* Battle Link: the clickable container for battle image */
 .battle-link {
   display: block;
   width: 100%;
@@ -169,81 +153,83 @@ h1 {
   display: none;
 }
 
-/* Back button styling */
+/* Back button styling (if needed) */
 #back-button {
   margin: 20px auto;
   display: block;
   max-width: 200px;
 }
 
+/* Optional Card List styling for when a set is selected */
 #card-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 10px;
-  justify-items: center;
-  padding: 3px;
-  margin-top: 15px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  backdrop-filter: blur(2px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
+/* Card List Grid: show many cards in a fluid layout */
+#card-list {
+  /* We'll turn it into a grid once it's displayed = "grid" in JS. */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 5px;
+  justify-items: center;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(2px);
+  /* If you want a subtle background or border, feel free to add them here. */
+}
 
-/* Each card container */
+/* Each card container can have its own styling */
 .card-container {
   width: 100%;
-  max-width: 220px;  /* Adjust to taste - matches the grid-template-columns aka will only go to that max */
+  max-width: 220px;               /* or 200px, adjust to taste */
   text-align: center;
   background-color: rgba(255,255,255,0.1);
-  border-radius: 15px;
-  padding: 3px;
+  border-radius: 8px;
+  padding: 2px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-/* Card image styling */
+/* The card image gets auto-sized */
 .card-container img {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  margin-bottom: 0rem; /* Or even 0 if you want no gap */
+  margin-bottom: 2px;
 }
 
-
-/* Card number styling */
 .card-number {
   font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   letter-spacing: 1px;
-  display: block;
-  margin-bottom: 0px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
-/* Rarity icon styling */
+/* Ensure rarity icons are small and aligned horizontally */
 .rarity-icon {
-  max-width: 20px;
-  max-height: 20x;
-  height: 20px;             /* ✅ lock in clarity */
-  display: block;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+  max-width: 16px;              /* Maximum width */
+  max-height: 16px;             /* Maximum height */
+  width: auto;                  /* Preserve aspect ratio */
+  height: auto;                 /* Preserve aspect ratio */
+  vertical-align: middle;       /* Align them with text/number */
+  margin: 0 2px;                /* Add some space between icons */
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5)); /* Optional shadow */
+  display: inline-block;        /* Ensure they are aligned horizontally */
 }
 
-.card-label {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* Style the set logo image so it isn’t too large */
+.set-logo {
+  width: 100px;          /* or whatever width best fits your design */
+  max-width: 100px;      /* ensures the image won’t exceed 100px */
+  height: auto;          /* maintains the aspect ratio */
+  margin-top: 8px;       /* spacing from adjacent elements, like the cover image */
 }
 
-.rarity-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap; /* ⬅️ key part */
-  gap: 2px;
-  max-width: 100%; /* removes the artificial constraint */
-  overflow-x: auto; /* optional: scroll if too long */
-}

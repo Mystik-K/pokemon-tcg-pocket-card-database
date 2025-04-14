@@ -7,6 +7,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Blot",
@@ -29,6 +30,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Razor Leaf",
@@ -51,6 +53,7 @@
     "subtype": "Stage 2",
     "health": 130,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Leaf Step",
@@ -74,6 +77,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Vine Whip",
@@ -97,6 +101,7 @@
     "subtype": "Stage 1",
     "health": 130,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Mega Drain",
@@ -122,6 +127,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Flap",
@@ -144,6 +150,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Air Slash",
@@ -168,6 +175,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Sting",
@@ -190,6 +198,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Poisonous Whip",
@@ -213,6 +222,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Bite",
@@ -236,6 +246,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Razor Leaf",
@@ -260,6 +271,7 @@
     "subtype": "Stage 2",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Frenzy Plant",
@@ -285,6 +297,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Bug Bite",
@@ -307,6 +320,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Entrancing Melody",
@@ -330,6 +344,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Tackle",
@@ -352,6 +367,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Leaf Cutter 60+",
@@ -376,6 +392,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Call for Family",
@@ -398,6 +415,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Pierce",
@@ -421,6 +439,7 @@
     "subtype": "Basic",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Flog 40+",
@@ -445,6 +464,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Leafy Cyclone",
@@ -468,6 +488,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Energy Cutoff",
@@ -491,6 +512,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Flop",
@@ -519,6 +541,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Stoke",
@@ -541,6 +564,7 @@
     "subtype": "Stage 1",
     "health": 130,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Bursting Inferno",
@@ -566,6 +590,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Flare",
@@ -588,6 +613,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Searing Flame",
@@ -611,6 +637,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Scratch",
@@ -633,6 +660,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Fiery Punch",
@@ -655,6 +683,7 @@
     "subtype": "Stage 2",
     "health": 170,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Flare Blitz",
@@ -678,6 +707,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Heat Breath 30+",
@@ -701,6 +731,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Headbutt",
@@ -724,6 +755,7 @@
     "subtype": "Stage 1",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Hammer In",
@@ -753,6 +785,7 @@
     "subtype": "Stage 2",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Frosty Flattening",
@@ -783,6 +816,7 @@
     "subtype": "Basic",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Frost Smash",
@@ -811,6 +845,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Nap",
@@ -833,6 +868,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Surf",
@@ -856,6 +892,7 @@
     "subtype": "Stage 2",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Aqua Jet",
@@ -880,6 +917,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Water Gun",
@@ -902,6 +940,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Jet Screw 30+",
@@ -924,6 +963,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Mud-Slap",
@@ -947,6 +987,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Muddy Water",
@@ -971,6 +1012,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Elegant Swim",
@@ -993,6 +1035,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Waterfall",
@@ -1015,6 +1058,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Ice Shard 10+",
@@ -1037,6 +1081,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Frost Breath",
@@ -1062,6 +1107,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Ice Beam",
@@ -1085,6 +1131,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Wave Splash",
@@ -1107,6 +1154,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Blizzard",
@@ -1130,6 +1178,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Slash",
@@ -1163,6 +1212,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Oceanic Gift",
@@ -1185,6 +1235,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Ram",
@@ -1207,6 +1258,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Lightning Ball",
@@ -1230,6 +1282,7 @@
     "subtype": "Stage 2",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Thunder Blast",
@@ -1254,6 +1307,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Big Explosion",
@@ -1276,6 +1330,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Rolling Attack",
@@ -1298,6 +1353,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Charge",
@@ -1320,6 +1376,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Exciting Voltage 40+",
@@ -1343,6 +1400,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Hide",
@@ -1365,6 +1423,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Electric Claws",
@@ -1388,6 +1447,7 @@
     "subtype": "Stage 2",
     "health": 130,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Volt Bolt",
@@ -1412,6 +1472,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Sparking Gadget 40+",
@@ -1435,6 +1496,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Assault Laser 20+",
@@ -1457,6 +1519,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Pound",
@@ -1479,6 +1542,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Fairy Wind",
@@ -1501,6 +1565,7 @@
     "subtype": "Stage 2",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Overdrive Smash",
@@ -1524,6 +1589,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Mumble",
@@ -1546,6 +1612,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Magical Delusion",
@@ -1569,6 +1636,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Teleport",
@@ -1591,6 +1659,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Slap",
@@ -1613,6 +1682,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Will-O-Wisp",
@@ -1635,6 +1705,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Psypunch",
@@ -1659,6 +1730,7 @@
     "subtype": "Stage 2",
     "health": 130,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Devour Soul",
@@ -1688,6 +1760,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Expand",
@@ -1710,6 +1783,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Balloon Strike",
@@ -1733,6 +1807,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Mind Boost",
@@ -1755,6 +1830,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Supreme Blast",
@@ -1779,6 +1855,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Psychic Arrow",
@@ -1801,6 +1878,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Spooky Shot",
@@ -1830,6 +1908,7 @@
     "subtype": "Basic",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Moonlight Gain",
@@ -1853,6 +1932,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Horn Attack",
@@ -1876,6 +1956,7 @@
     "subtype": "Stage 1",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Wrack Down",
@@ -1900,6 +1981,7 @@
     "subtype": "Stage 2",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Mountain Swing",
@@ -1925,6 +2007,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Pierce",
@@ -1947,6 +2030,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Acrobatics 20+",
@@ -1969,6 +2053,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Spinning Attack",
@@ -1992,6 +2077,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Ram",
@@ -2015,6 +2101,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Boulder Crush",
@@ -2045,6 +2132,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Headbutt",
@@ -2067,6 +2155,7 @@
     "subtype": "Stage 2",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Head Smash",
@@ -2089,6 +2178,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Land Crush",
@@ -2113,6 +2203,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Jab",
@@ -2135,6 +2226,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Submarine Blow",
@@ -2163,6 +2255,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Rolling Tackle",
@@ -2187,6 +2280,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Earthen Press",
@@ -2212,6 +2306,7 @@
     "subtype": "Stage 2",
     "health": 170,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Energized Blade 70+",
@@ -2235,6 +2330,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Peck",
@@ -2257,6 +2353,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Skill Dive",
@@ -2280,6 +2377,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Double Scratch 20x",
@@ -2302,6 +2400,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Scratching Nails 30+",
@@ -2324,6 +2423,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Bite",
@@ -2346,6 +2446,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Darkness Fang",
@@ -2369,6 +2470,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Scratch",
@@ -2391,6 +2493,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Poison Gas",
@@ -2414,6 +2517,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Swirling Disaster",
@@ -2436,6 +2540,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Pierce",
@@ -2459,6 +2564,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Cross Poison 40x",
@@ -2483,6 +2589,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Group Beatdown 20x",
@@ -2506,6 +2613,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Group Beatdown 40x",
@@ -2529,6 +2637,7 @@
     "subtype": "Basic",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Dark Void",
@@ -2553,6 +2662,7 @@
     "subtype": "Basic",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Dark Prism",
@@ -2582,6 +2692,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Metal Arms 20+",
@@ -2604,6 +2715,7 @@
     "subtype": "Basic",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Metal Claw",
@@ -2628,6 +2740,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Headbutt",
@@ -2651,6 +2764,7 @@
     "subtype": "Stage 2",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Headbang",
@@ -2680,6 +2794,7 @@
     "subtype": "Stage 1",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Iron Head 50+",
@@ -2703,6 +2818,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Tackle",
@@ -2726,6 +2842,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Guard Press",
@@ -2750,6 +2867,7 @@
     "subtype": "Stage 1",
     "health": 130,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Triple Nose 30+",
@@ -2775,6 +2893,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Metallic Turbo",
@@ -2809,6 +2928,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Steel Tackle",
@@ -2833,6 +2953,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Gnaw",
@@ -2855,6 +2976,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Slash",
@@ -2878,6 +3000,7 @@
     "subtype": "Stage 2",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Dragon Claw",
@@ -2906,6 +3029,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Tongue Slap",
@@ -2930,6 +3054,7 @@
     "subtype": "Stage 1",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare EX",
     "attacks": [
       {
         "name": "Licking Fury 100+",
@@ -2955,6 +3080,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Quick Attack 10+",
@@ -2977,6 +3103,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Beam",
@@ -2999,6 +3126,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Sharpen",
@@ -3021,6 +3149,7 @@
     "subtype": "Stage 2",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Buggy Beam",
@@ -3045,6 +3174,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Tail Jab",
@@ -3067,6 +3197,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Double Hit 40x",
@@ -3089,6 +3220,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Pluck",
@@ -3111,6 +3243,7 @@
     "subtype": "Stage 1",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Wing Attack",
@@ -3134,6 +3267,7 @@
     "subtype": "Stage 2",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Clutch",
@@ -3158,6 +3292,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Super Fang",
@@ -3181,6 +3316,7 @@
     "subtype": "Stage 1",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Rolling Tackle",
@@ -3204,6 +3340,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Splash",
@@ -3226,6 +3363,7 @@
     "subtype": "Stage 1",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Jump Kick",
@@ -3248,6 +3386,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Pose",
@@ -3270,6 +3409,7 @@
     "subtype": "Stage 1",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [
       {
         "name": "Interrupt",
@@ -3294,6 +3434,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Fury Attack 20x",
@@ -3316,6 +3457,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [
       {
         "name": "Spin Storm",
@@ -3339,6 +3481,7 @@
     "subtype": "Basic",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Rare",
     "attacks": [
       {
         "name": "Raging Hammer 50+",
@@ -3359,28 +3502,34 @@
   {
     "id": "a2_144",
     "name": "Skull Fossil",
-    "element": null,
+    "element": "Colorless",
     "type": "Trainer",
     "subtype": "Item",
-    "health": null,
+    "health": 40,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Play this card as if it were a 40 HP Basic Colorless Pokémon. At any time during your turn, you may discard this card from play. This card can't retreat."
+    ]
   },
   {
     "id": "a2_145",
     "name": "Armor Fossil",
-    "element": null,
+    "element": "Colorless",
     "type": "Trainer",
     "subtype": "Item",
-    "health": null,
+    "health": 40,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Common",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Play this card as if it were a 40 HP Basic Colorless Pokémon. At any time during your turn, you may discard this card from play. This card can't retreat."
+    ]
   },
   {
     "id": "a2_146",
@@ -3390,51 +3539,63 @@
     "subtype": "Item",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Choose a Pokémon in your hand and switch it with a random Pokémon from your deck."
+    ]
   },
   {
     "id": "a2_147",
     "name": "Giant Cape",
     "element": null,
     "type": "Trainer",
-    "subtype": "Tool",
+    "subtype": "Pokémon Tool",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "The Pokémon this card is attached to gets +20 HP."
+    ]
   },
   {
     "id": "a2_148",
     "name": "Rocky Helmet",
     "element": null,
     "type": "Trainer",
-    "subtype": "Tool",
+    "subtype": "Pokémon Tool",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "If the Pokémon this card is attached to is in the Active Spot and is damaged by an opponent's attack, put 2 damage counters on the Attacking Pokémon."
+    ]
   },
   {
     "id": "a2_149",
     "name": "Lum Berry",
     "element": null,
     "type": "Trainer",
-    "subtype": "Tool",
+    "subtype": "Pokémon Tool",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "At the end of each turn, if the Pokémon this card is attached to has any Special Conditions, it recovers from all of them and discard this card."
+    ]
   },
-  {
+    {
     "id": "a2_150",
     "name": "Cyrus",
     "element": null,
@@ -3442,10 +3603,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Switch in 1 of your opponent's Benched Pokémon that has damage on it to the Active Spot."
+    ]
   },
   {
     "id": "a2_151",
@@ -3455,10 +3619,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Put 1 random Glameow, Stunky, or Croagunk from your deck into your hand."
+    ]
   },
   {
     "id": "a2_152",
@@ -3468,10 +3635,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "During this turn, attacks used by your Garchomp or Togekiss do +50 damage to your opponent's Active Pokémon."
+    ]
   },
   {
     "id": "a2_153",
@@ -3481,10 +3651,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Choose 1 of your Electivire or Luxray. Attach 2 Lightning Energy from your discard pile to that Pokémon."
+    ]
   },
   {
     "id": "a2_154",
@@ -3494,10 +3667,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Move an Energy from 1 of your Benched Pokémon to your Active Pokémon."
+    ]
   },
   {
     "id": "a2_155",
@@ -3507,10 +3683,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Uncommon",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Your opponent shuffles their hand into their deck and draws a card for each of their remaining points needed to win."
+    ]
   },
   {
     "id": "a2_156",
@@ -3520,6 +3699,7 @@
     "subtype": "Stage 1",
     "health": 130,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Mega Drain",
@@ -3545,6 +3725,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Call for Family",
@@ -3567,6 +3748,7 @@
     "subtype": "Basic",
     "health": 90,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Flog 40+",
@@ -3591,6 +3773,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Flop",
@@ -3619,6 +3802,7 @@
     "subtype": "Stage 2",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Frosty Flattening",
@@ -3649,6 +3833,7 @@
     "subtype": "Stage 1",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Muddy Water",
@@ -3673,6 +3858,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Oceanic Gift",
@@ -3695,6 +3881,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Hide",
@@ -3717,6 +3904,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Assault Laser 20+",
@@ -3739,6 +3927,7 @@
     "subtype": "Basic",
     "health": 50,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Expand",
@@ -3761,6 +3950,7 @@
     "subtype": "Basic",
     "health": 70,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Supreme Blast",
@@ -3785,6 +3975,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Spooky Shot",
@@ -3814,6 +4005,7 @@
     "subtype": "Basic",
     "health": 110,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Moonlight Gain",
@@ -3837,6 +4029,7 @@
     "subtype": "Stage 2",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Mountain Swing",
@@ -3862,6 +4055,7 @@
     "subtype": "Stage 1",
     "health": 100,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Submarine Blow",
@@ -3890,6 +4084,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Rolling Tackle",
@@ -3914,6 +4109,7 @@
     "subtype": "Basic",
     "health": 80,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Swirling Disaster",
@@ -3936,6 +4132,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Group Beatdown 20x",
@@ -3959,6 +4156,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Steel Tackle",
@@ -3983,6 +4181,7 @@
     "subtype": "Stage 2",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Dragon Claw",
@@ -4011,6 +4210,7 @@
     "subtype": "Stage 2",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Clutch",
@@ -4035,6 +4235,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Super Fang",
@@ -4058,6 +4259,7 @@
     "subtype": "Basic",
     "health": 60,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Pose",
@@ -4080,6 +4282,7 @@
     "subtype": "Basic",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art",
     "attacks": [
       {
         "name": "Raging Hammer 50+",
@@ -4105,6 +4308,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Air Slash",
@@ -4129,6 +4333,7 @@
     "subtype": "Stage 2",
     "health": 170,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Flare Blitz",
@@ -4152,6 +4357,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Slash",
@@ -4185,6 +4391,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Sparking Gadget 40+",
@@ -4208,6 +4415,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Magical Delusion",
@@ -4231,6 +4439,7 @@
     "subtype": "Stage 2",
     "health": 170,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Energized Blade 70+",
@@ -4254,6 +4463,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Scratching Nails 30+",
@@ -4276,6 +4486,7 @@
     "subtype": "Basic",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Dark Prism",
@@ -4305,6 +4516,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Metallic Turbo",
@@ -4339,6 +4551,7 @@
     "subtype": "Stage 1",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Licking Fury 100+",
@@ -4364,10 +4577,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Switch 1 of your opponent's Pokémon that has damage on it to the Active Spot."
+    ]
   },
   {
     "id": "a2_191",
@@ -4377,10 +4593,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Put 1 random Glameow, Stunky, or Croagunk from your deck into your hand."
+    ]
   },
   {
     "id": "a2_192",
@@ -4390,10 +4609,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "During this turn, attacks used by your Garchomp or Togekiss do +50 damage to your opponent's Active Pokémon."
+    ]
   },
   {
     "id": "a2_193",
@@ -4403,10 +4625,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Choose 1 of your Electivire or Luxray. Attach 2 Lightning Energy from your discard pile to that Pokémon."
+    ]
   },
   {
     "id": "a2_194",
@@ -4416,10 +4641,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Move an Energy from 1 of your Benched Pokémon to your Active Pokémon."
+    ]
   },
   {
     "id": "a2_195",
@@ -4429,10 +4657,13 @@
     "subtype": "Supporter",
     "health": null,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [],
-    "retreatCost": null,
+    "retreatCost": 0,
     "weakness": null,
-    "abilities": null
+    "abilities": [
+      "Your opponent shuffles their hand into their deck and draws a card for each of their remaining points needed to win."
+    ]
   },
   {
     "id": "a2_196",
@@ -4442,6 +4673,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Air Slash",
@@ -4466,6 +4698,7 @@
     "subtype": "Stage 2",
     "health": 170,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Flare Blitz",
@@ -4489,6 +4722,7 @@
     "subtype": "Basic",
     "health": 120,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Sparking Gadget 40+",
@@ -4512,6 +4746,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Magical Delusion",
@@ -4535,6 +4770,7 @@
     "subtype": "Stage 2",
     "health": 170,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Energized Blade 70+",
@@ -4558,6 +4794,7 @@
     "subtype": "Stage 1",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Scratching Nails 30+",
@@ -4580,6 +4817,7 @@
     "subtype": "Basic",
     "health": 140,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Dark Prism",
@@ -4609,6 +4847,7 @@
     "subtype": "Stage 1",
     "health": 160,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Full Art EX/Support",
     "attacks": [
       {
         "name": "Licking Fury 100+",
@@ -4634,6 +4873,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Immersive",
     "attacks": [
       {
         "name": "Slash",
@@ -4667,6 +4907,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Immersive",
     "attacks": [
       {
         "name": "Metallic Turbo",
@@ -4701,6 +4942,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Gold Crown",
     "attacks": [
       {
         "name": "Slash",
@@ -4734,6 +4976,7 @@
     "subtype": "Basic",
     "health": 150,
     "set": "Space-Time Smackdown (A2)",
+    "rarity": "Gold Crown",
     "attacks": [
       {
         "name": "Metallic Turbo",

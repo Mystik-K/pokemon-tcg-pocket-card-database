@@ -5,6 +5,7 @@
   padding: 10px;
   position: relative;
   z-index: 1;
+  margin-top: 15px; /* or match the header height + padding */
 }
 
 /* Title Styling */
@@ -68,8 +69,8 @@ h1 {
 }
 
 #back-button {
-  margin: 20px auto;
+  margin: 40px auto;
   display: block;
   max-width: 200px;
+  position: relative;
 }
-

@@ -44,16 +44,43 @@ window.extractCardNumber = function(cardID) {
 
 window.updateHeaderForSet = function(setName) {
   DOM.headerTitle.style.display = 'none';
+
   let setLogo = document.querySelector('.set-theme-logo');
   if (!setLogo) {
     setLogo = document.createElement('img');
     setLogo.className = 'set-theme-logo';
-    DOM.mainContainer.insertBefore(setLogo, DOM.homepageSections);
+    
+    // ✅ Insert the logo right after the header title
+    DOM.headerTitle.parentNode.insertBefore(setLogo, DOM.headerTitle.nextSibling);
   }
+
   const mapping = setMappings[setName];
+  if (!mapping) {
+    console.warn(`No mapping found for set: ${setName}`);
+    return;
+  }
+
   setLogo.src = `images/${mapping.cardsFolder}/${mapping.cardsFolder}-set-logo.png`;
   setLogo.alt = `${setName} Logo`;
 };
+
+
+// window.updateHeaderForSet = function(setName) {
+  // DOM.headerTitle.style.display = 'none';
+  // let setLogo = document.querySelector('.set-theme-logo');
+  // if (!setLogo) {
+    // setLogo = document.createElement('img');
+    // setLogo.className = 'set-theme-logo';
+
+  // }
+  // const mapping = setMappings[setName];
+  // setLogo.src = `images/${mapping.cardsFolder}/${mapping.cardsFolder}-set-logo.png`;
+  // setLogo.alt = `${setName} Logo`;
+
+  // New logic
+  // DOM.cardList.innerHTML = '';
+  // DOM.cardList.appendChild(setLogo);
+// };
 
 window.showCardList = function() {
   DOM.setsSection.style.display = 'none';

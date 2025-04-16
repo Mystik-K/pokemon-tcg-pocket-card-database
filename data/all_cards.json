@@ -16653,6 +16653,7 @@
     "health": 140,
     "set": "Triumphant light (A2a)",
     "pack": "Triumphant light",
+    "rarity": "Immersive",
     "attacks": [
       {
         "name": "Ultimate Force",
@@ -16683,7 +16684,7 @@
     "health": 140,
     "set": "Triumphant light (A2a)",
     "pack": "Triumphant light",
-    "rarity": "Immersive",
+    "rarity": "Gold Crown",
     "attacks": [
       {
         "name": "Ultimate Force",

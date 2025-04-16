@@ -1,0 +1,362 @@
+/* =====================================================
+   📦 LAYOUT: CARD DETAIL CONTAINER
+   ===================================================== */
+   
+.card-detail-container {
+  display: flex;
+  /* flex-wrap: nowrap; /* ⛔ don't stack them! */ */
+  align-items: flex-start;
+  gap: 5px; /* give the columns breathing room */
+  padding: 120px 0px 30px;
+  max-width: 1600px; /* expanded from 1200px or 1600px if you want to stretch more */
+  margin: 0 auto;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /*controls gap of bottom containers in each column*/
+  overflow: hidden; /* prevent contents from pushing out */
+}
+
+.card-info-container,
+.card-glow-container,
+.similar-cards {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.left-column .nav-strip  {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.right-column .similar-cards {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   🎴 LEFT COLUMN: CARD IMAGE + GLOW
+   ===================================================== */
+.card-glow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 700px;  /* Maximum size for the container - match the other columns for proportionality (above) */
+  height: 700px;      /* Let the height adjust based on the image */
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+  flex-grow: 0; /* Prevent further scaling */
+  z-index: 1; /* Ensure it's above the background */
+}
+
+/* .card-glow-container { */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* position: relative; */
+  /* width: 100%; */
+  /* max-width: 500px;  /* Maximum size for the container */ 
+  /* height: auto;      /* Let the height adjust based on the image */ 
+  /* border-radius: 30px; */
+  /* overflow: hidden; */
+  /* box-shadow: 0 0 25px rgba(255, 255, 255, 0.05); */
+  /* flex-grow: 0; /* Prevent further scaling */ 
+  /* z-index: 0; */
+/* } */
+
+.card-page-image {
+  width: auto;  /* Allow the width to scale based on its natural ratio */
+  height: auto; /* Keep the image’s height proportional to the width */
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  max-height: 100%; /* Ensure the image doesn't exceed the container */
+  object-fit: contain;  /* Ensure the image is contained within the container */
+  margin: auto;  /* Center the image both horizontally and vertically */
+  z-index: 2;  /* Ensure it's on top of the background */
+  position: relative;
+  border-radius: 20px;
+}
+
+.card-bg-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(9px) brightness(1.0);
+  z-index: -1;  /* Ensure the background stays behind */
+  opacity: 1;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+/* =====================================================
+   🧭 LEFT COLUMN: NAVIGATION
+   ===================================================== */
+/* =====================================================
+   🧭 LEFT COLUMN: NAVIGATION
+   ===================================================== */
+.nav-strip {
+  display: flex;
+  justify-content: space-between;  /* This makes sure that the elements are spaced out properly */
+  align-items: center;  /* Vertically aligns button and image */
+  width: 100%;  /* Ensure it spans the available width */
+  max-width: 700px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  gap: 20px;  /* Adds space between the elements */
+}
+
+/* Nav container to ensure it aligns within the image container */
+.nav-combo {
+  display: flex;
+  align-items: center; /* Vertically aligns the image and text */
+  gap: 10px; /* Adjusts the spacing between the image and text */
+  position: relative; /* Makes sure the text aligns relative to the image container */
+  width: 100%;
+  color: white; /* Set color to white explicitly */
+}
+
+/* For the left card */
+.nav-combo .left {
+  display: flex;
+  flex-direction: column; /* Stack name and number vertically */
+  align-items: flex-start; /* Aligns the text to the left */
+  justify-content: center; /* Center the elements vertically if there's extra space */
+  position: absolute;
+  left: 0;  /* Aligns the text to the left of the image */
+  text-align: left;
+}
+
+/* For the right card */
+.nav-combo .right {
+  display: flex;
+  flex-direction: column; /* Stack name and number vertically */
+  align-items: flex-end;  /* Aligns both the card name and number to the right of the container */
+  justify-content: center; /* Center the elements vertically if there's extra space */
+  position: absolute;
+  right: 0;
+  text-align: center; /* Ensures both name and number are aligned to the center */
+}
+
+/* Remove default underline from links */
+.nav-link {
+  text-decoration: none;  /* Remove the underline */
+  color: inherit; /* Inherit color */
+}
+
+/* Center the number under the name */
+.nav-combo .nav-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Ensures both the name and the number are aligned */
+  gap: 1px; /* Space between the name and the number */
+  color: white; /* Ensures the text is white */
+}
+
+.nav-combo .left .nav-label span,
+.nav-combo .right .nav-label span {
+  display: block;  /* Make sure the number is on a new line */
+  margin-top: 3px; /* Adjust space between the card name and number */
+  text-align: center; /* Align both the name and number centrally */
+}
+
+/* Adjust arrow styles to stay consistent */
+.nav-arrow {
+  height: 60px;
+  width: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Thumb image style */
+.nav-card-thumb {
+  height: 80px;
+  width: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.nav-link:hover .nav-combo {
+  transform: scale(1.20);
+  /* or add a subtle box-shadow/glow */
+}
+
+/* =====================================================
+   🧾 RIGHT COLUMN: CARD INFO + SIMILAR CARDS
+   ===================================================== */
+.card-info-box {
+  flex: 1;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.set-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.set-info img.set-logo {
+  height: 100px;
+  margin-bottom: 5px; /*this adjusts the padding of the info underneath the set logo*/
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+  transition: transform 0.2s ease;
+}
+
+.similar-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 500px;
+  width: 100%;
+  padding: 15px; /*changing this changes the other ______ cards container vertically*/
+  border-radius: 12px; /*adjusts the sharpness of just the other ______cards container, try to match this with the other containers*/
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  gap: 5px;
+  min-height: 80px;
+}
+
+.similar-cards h3 {
+  font-size: 1.6Arem; /*header font inside the other _____ cards container*/
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.similar-cards .related-card-thumbs {
+  display: flex;
+  gap: 10px; /*this controls the gap of the cards featured in other _____ cards*/
+  flex-wrap: wrap;
+  justify-content: center; /* <- add this if not already */
+}
+
+.similar-cards .related-card-thumbs img {
+  height: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.similar-cards .related-card-thumbs img:hover {
+  transform: scale(1.15);
+}
+
+.rarity-wrapper {
+  display: inline-flex;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  line-height: 1;
+  border: none;
+  flex-wrap: nowrap;
+  /* 🔧 NEW: these kill vertical space */
+  align-items: center;
+  justify-content: center;
+  max-height: 1em;
+}
+
+.rarity-icon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  pointer-events: none;
+  line-height: 1;
+  max-height: 1em; /* 👈 NEW: ensures image never stretches row */
+  pointer-events: none; /* ← disables hover/click */
+  user-select: none;     /* ← disables text/image selection */
+}
+
+.id-and-rarity {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  /* 🔧 NEW: this ensures it doesn’t grow taller than needed */
+  max-height: 1.4em;
+}
+
+.rarity-icon,
+.id-and-rarity,
+.related-meta {
+  pointer-events: none;
+}
+/* =====================================================
+   🎨 UTILITIES & SHARED STYLES
+   ===================================================== */
+
+
+.related-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*width: 15-px; this manually sets the width of the cards in other similar cards, but is being handled by the parent .card-info-container above*/
+  padding: 0;
+  border: none;
+
+  /* 👇 NEW: This fixes the vertical space from the wrapper/image overflow */
+  line-height: normal;
+  gap: 4px;
+}
+
+.related-thumb img {
+  height: 80px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 6px rgba(255,255,255,0.2);
+}
+
+.related-thumb:hover > img {
+  transform: scale(0.6); /*4/15/2025 doesn't seem to control anything currently, or it's being overridden by a parent objective - most likely similar cards related thumb images*/
+}
+
+.related-meta {
+  font-size: 0.8rem;
+  color: white;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  gap: 2px;
+  margin-top: 4px;
+  line-height: 1;
+  /* background: rgba(255, 0, 0, 0.1); this was used as debugger for a background against the card name/number/rarity in the other similar cards section */
+}

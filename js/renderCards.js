@@ -12,10 +12,17 @@ window.displayCardsForSet = function(setName) {
     cardContainer.className = 'card-container';
 
     const cardImg = document.createElement('img');
-    const fixedCardId = card.id.replace(/_/g, "-");
+	const normalizedId = card.id.replace(/_/g, "-").toLowerCase();
+    //const fixedCardId = card.id.replace(/_/g, "-");
     const cardsFolder = card.id.startsWith("a1a-") ? "a1a" : card.id.startsWith("a1-") ? "a1" : folder;
-    cardImg.src = `images/${cardsFolder}/${fixedCardId}.webp`;
-    cardImg.alt = card.name;
+	
+    // cardImg.src = `images/${cardsFolder}/${fixedCardId}.webp`;
+    // cardImg.alt = card.name;
+	
+	// ✅ Use normalizedId here
+	cardImg.src = `images/${cardsFolder}/${normalizedId}.webp`;
+	cardImg.alt = card.name;
+	
 
     const label = document.createElement('div');
     label.className = 'card-label';
@@ -29,6 +36,11 @@ window.displayCardsForSet = function(setName) {
       label.appendChild(number);
       label.appendChild(rarityIcons);
     }
+	
+	// ✅ Link to individual card page
+	cardContainer.addEventListener('click', () => {
+		window.location.href = `card.html?id=${normalizedId}`;
+		});
 
     cardContainer.appendChild(cardImg);
     cardContainer.appendChild(label);

@@ -8991,7 +8991,7 @@
       {
         "name": "Powerful Bloom 50x",
         "effect": "Flip a coin for each Energy attached to this Pokémon. This attack does 50 damage for each heads.",
-        "damage": 0,
+        "damage": "50x",
         "cost": [
           "Grass",
           "Colorless"
@@ -19550,48 +19550,6 @@
       {
         "name": "Hand Disruption",
         "effects": "Your opponent shuffles their hand into their deck and draws 4 cards.",
-        "cost": []
-      }
-    ]
-  },
-  {
-    "id": "p-a-007",
-    "name": "Professor’s Research",
-    "element": null,
-    "type": "Trainer",
-    "subtype": "Supporter",
-    "health": null,
-    "set": "Promo A (P-A)",
-    "pack": "Shop",
-    "rarity": "Promo",
-    "attacks": [],
-    "retreatCost": null,
-    "weakness": null,
-    "abilities": [
-      {
-        "name": "Research",
-        "effects": "Draw 2 cards.",
-        "cost": []
-      }
-    ]
-  },
-  {
-    "id": "p-a-008",
-    "name": "Pokédex",
-    "element": null,
-    "type": "Trainer",
-    "subtype": "Item",
-    "health": null,
-    "set": "Promo A (P-A)",
-    "pack": "Gift",
-    "rarity": "Promo",
-    "attacks": [],
-    "retreatCost": null,
-    "weakness": null,
-    "abilities": [
-      {
-        "name": "Look Ahead",
-        "effects": "Look at the top 3 cards of your deck.",
         "cost": []
       }
     ]

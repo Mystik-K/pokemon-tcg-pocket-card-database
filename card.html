@@ -10,7 +10,16 @@
   <link rel="stylesheet" href="styles/layout.css" />
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/singlecard.css" />
+  <link rel="stylesheet" href="styles/search.css" />
 </head>
+<!-- 🔍 Search Results Overlay -->
+<div id="search-results-container" class="hidden">
+  <div id="search-results-header">
+    <span id="search-results-title"></span>
+    <button id="close-search-results">✖</button>
+  </div>
+  <div id="search-results-grid"></div>
+</div>
 <body>
   <!-- Header -->
   <header id="site-header">
@@ -20,7 +29,7 @@
       </a>
       <div id="search-container">
         <img src="images/masterball.webp" alt="Master Ball" class="logo-badge" />
-        <input type="text" id="search-bar" placeholder="Find a card..." disabled />
+        <input type="text" id="search-bar" placeholder="Find a card..." />
       </div>
     </div>
   </header>
@@ -69,75 +78,35 @@
 
 	<!-- Right Column -->
 	<div class="right-column">
-	  <div class="card-info-container">
-		<div class="card-info-box">
-		  <div class="set-info" id="set-info"></div>
-		  <div class="card-meta" id="card-meta"></div>
-		</div>
-	  </div>
+	  <div class="card-info-box">
+ 	   <div class="set-info" id="set-info"></div>
+	   <div class="card-meta" id="card-meta"></div>
+      </div>
 	  <div class="similar-cards" id="similar-cards">
-		<h3>Other Similar Cards</h3>
-		<div class="related-card-thumbs" id="related-card-thumbs"></div>
+	   <h3>Other [Name] Cards</h3>
+	   <div class="related-card-thumbs" id="related-card-thumbs"></div>
 	  </div>
-	</div>
+	 </div>
 
-	
-      
-      <!-- Left Column -->
-      <!-- <div class="left-column"> -->
-        <!-- <div class="card-visual"> -->
-          <!-- <div class="card-glow-container"> -->
-            <!-- <div class="card-bg-glow" id="card-glow"></div> -->
-            <!-- <img class="card-page-image" id="card-image" src="" alt="" /> -->
-          <!-- </div> -->
-        <!-- </div> -->
-		<!-- <div class="nav-strip" id="nav-strip"> -->
-		  <!-- LEFT (Prev) -->
-		  <!-- <a href="#" id="prev-link" class="nav-link"> -->
-			<!-- <div class="nav-combo"> -->
-			  <!-- <img src="images/ui/arrow-left.png" alt="Previous" class="nav-arrow" /> -->
-			  <!-- <img id="prev-thumb-img" class="nav-card-thumb" alt="Previous Card" /> -->
-			  <!-- <div class="nav-label"> -->
-				<!-- <span id="prev-card-name" class="card-name-label"></span> -->
-				<!-- <span id="prev-card-num" class="card-num-label"></span> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-		  <!-- </a> -->
-
-		  <!-- RIGHT (Next) -->
-		  <!-- <a href="#" id="next-link" class="nav-link"> -->
-			<!-- <div class="nav-combo"> -->
-			  <!-- <div class="nav-label"> -->
-				<!-- <span id="next-card-name" class="card-name-label"></span> -->
-				<!-- <span id="next-card-num" class="card-num-label"></span> -->
-			  <!-- </div> -->
-			  <!-- <img id="next-thumb-img" class="nav-card-thumb" alt="Next Card" /> -->
-			  <!-- <img src="images/ui/arrow-right.png" alt="Next" class="nav-arrow" /> -->
-			<!-- </div> -->
-		  <!-- </a> -->
+	<!-- <div class="right-column"> -->
+	  <!-- <div class="card-info-container"> -->
+		<!-- <div class="card-info-box"> -->
+		  <!-- <div class="set-info" id="set-info"></div> -->
+		  <!-- <div class="card-meta" id="card-meta"></div> -->
 		<!-- </div> -->
-	<!-- </div> <!-- ✅ CLOSES .left-column properly --> -->
-
-      <!-- Right Column -->
-      <!-- <div class="right-column"> -->
-        <!-- <div class="card-info-container"> -->
-          <!-- <div class="card-info-box"> -->
-            <!-- <div class="set-info" id="set-info"></div> -->
-            <!-- <div class="card-meta" id="card-meta"></div> -->
-          <!-- </div> -->
-        <!-- </div> -->
-        <!-- <div class="similar-cards" id="similar-cards"> -->
-          <!-- <h3>Other Similar Cards</h3> -->
-          <!-- <div class="related-card-thumbs" id="related-card-thumbs"></div> -->
-        <!-- </div> -->
-      <!-- </div> -->
-
+	  <!-- </div> -->
+	  <!-- <div class="similar-cards" id="similar-cards"> -->
+		<!-- <h3>Other Similar Cards</h3> -->
+		<!-- <div class="related-card-thumbs" id="related-card-thumbs"></div> -->
+	  <!-- </div> -->
+	<!-- </div> -->
     </div>
   </div>
 
   <script src="js/dom.js"></script>
   <script src="js/rarity.js"></script>
   <script src="js/renderSingleCard.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>
 

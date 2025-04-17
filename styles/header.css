@@ -41,17 +41,3 @@
   text-shadow: 1px 1px 2px black;
 }
 
-.logo-badge {
-  height: 40px;   /* or however large you want the Master Ball */
-  width: auto;
-  pointer-events: none;  /* ensures it’s not clickable */
-  user-select: none;
-}
-
-
-#search-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-

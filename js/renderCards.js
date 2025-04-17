@@ -22,7 +22,7 @@ window.displayCardsForSet = function(setName) {
 	// ✅ Use normalizedId here
 	cardImg.src = `images/${cardsFolder}/${normalizedId}.webp`;
 	cardImg.alt = card.name;
-	
+	cardImg.loading = "lazy";
 
     const label = document.createElement('div');
     label.className = 'card-label';
@@ -75,24 +75,6 @@ window.updateHeaderForSet = function(setName) {
   setLogo.src = `images/${mapping.cardsFolder}/${mapping.cardsFolder}-set-logo.png`;
   setLogo.alt = `${setName} Logo`;
 };
-
-
-// window.updateHeaderForSet = function(setName) {
-  // DOM.headerTitle.style.display = 'none';
-  // let setLogo = document.querySelector('.set-theme-logo');
-  // if (!setLogo) {
-    // setLogo = document.createElement('img');
-    // setLogo.className = 'set-theme-logo';
-
-  // }
-  // const mapping = setMappings[setName];
-  // setLogo.src = `images/${mapping.cardsFolder}/${mapping.cardsFolder}-set-logo.png`;
-  // setLogo.alt = `${setName} Logo`;
-
-  // New logic
-  // DOM.cardList.innerHTML = '';
-  // DOM.cardList.appendChild(setLogo);
-// };
 
 window.showCardList = function() {
   DOM.setsSection.style.display = 'none';

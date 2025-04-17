@@ -68,7 +68,7 @@ fetch('data/all_cards.json')
         cardThumb.classList.add("related-thumb");
 		cardThumb.innerHTML = `
 		  <div class="thumb-preview">
-			<img src="${rImgSrc}" alt="${relatedCard.name}" />
+			<img src="${rImgSrc}" alt="${relatedCard.name}" loading="lazy" />
 			<div class="related-meta">
 			  <strong>${relatedCard.name}</strong>
 			  <div class="id-and-rarity">#${relatedCard.id.replace(/.*[-_]/, '')}</div>
@@ -97,6 +97,7 @@ fetch('data/all_cards.json')
 
     // Set the big card image and blurred background
     document.getElementById('card-image').src = imageSrc;
+	document.getElementById('card-image').loading = "lazy";
     document.getElementById('card-image').alt = card.name;
     document.getElementById("card-glow").style.backgroundImage = `url(${imageSrc})`;
 
@@ -160,8 +161,24 @@ fetch('data/all_cards.json')
     const currentIndex = sortedSetCards.findIndex(c => c.id === card.id);
     const prev = sortedSetCards[currentIndex - 1];
     const next = sortedSetCards[currentIndex + 1];
+	
+	if (next) {
+	  const nextId = next.id.toLowerCase().replace(/_/g, "-");
+	  const link = document.createElement("link");
+	  link.rel = "prefetch";
+	  link.href = `card.html?id=${nextId}`;
+	  document.head.appendChild(link);
+	}
 
-    // 🔧 Helper to build a clickable thumb
+	if (prev) {
+	  const prevId = prev.id.toLowerCase().replace(/_/g, "-");
+	  const link = document.createElement("link");
+	  link.rel = "prefetch";
+	  link.href = `card.html?id=${prevId}`;
+	  document.head.appendChild(link);
+	}
+
+	    // 🔧 Helper to build a clickable thumb
 	const buildThumb = (imgEl, data, linkId, nameId, numId) => {
 	  if (!data) {
 		imgEl.style.display = "none";
@@ -174,6 +191,7 @@ fetch('data/all_cards.json')
 	  const normalizedId = data.id.toLowerCase().replace(/_/g, "-");
 
 	  imgEl.src = `images/${folder}/${normalizedId}.webp`;
+	  imgEl.loading = "lazy";
 	  imgEl.alt = data.name;
 	  imgEl.title = `${data.name} (#${data.id.replace(/^.*[-_]/, '')})`;
 

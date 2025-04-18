@@ -7,10 +7,11 @@
   <title>PTCGP - Card Details</title>
 
   <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/globalVisuals/globalVisuals.css" />
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/singlecard.css" />
   <link rel="stylesheet" href="styles/search.css" />
+  <link rel="stylesheet" href="styles/rarity.css" />
 </head>
 <!-- 🔍 Search Results Overlay -->
 <div id="search-results-container" class="hidden">
@@ -25,17 +26,17 @@
   <header id="site-header">
     <div class="header-inner main-container">
       <a href="index.html" id="logo">
-        <img src="images/logo.jpg" alt="PTCGP Logo" />
+        <img src="images/ui/header/logo.jpg" alt="PTCGP Logo" />
       </a>
       <div id="search-container">
-        <img src="images/masterball.webp" alt="Master Ball" class="logo-badge" />
+        <img src="images/ui/header/masterball.webp" alt="Master Ball" class="logo-badge" />
         <input type="text" id="search-bar" placeholder="Find a card..." />
       </div>
     </div>
   </header>
 
   <!-- Background -->
-  <img id="bg-img" src="images/bg.jpg" alt="Background" />
+  <img id="bg-img" src="images/ui/bg.jpg" alt="Background" />
 
   <!-- Main Content -->
   <div class="main-container">
@@ -87,26 +88,23 @@
 	   <div class="related-card-thumbs" id="related-card-thumbs"></div>
 	  </div>
 	 </div>
-
-	<!-- <div class="right-column"> -->
-	  <!-- <div class="card-info-container"> -->
-		<!-- <div class="card-info-box"> -->
-		  <!-- <div class="set-info" id="set-info"></div> -->
-		  <!-- <div class="card-meta" id="card-meta"></div> -->
-		<!-- </div> -->
-	  <!-- </div> -->
-	  <!-- <div class="similar-cards" id="similar-cards"> -->
-		<!-- <h3>Other Similar Cards</h3> -->
-		<!-- <div class="related-card-thumbs" id="related-card-thumbs"></div> -->
-	  <!-- </div> -->
-	<!-- </div> -->
     </div>
   </div>
 
   <script src="js/dom.js"></script>
-  <script src="js/rarity.js"></script>
-  <script src="js/renderSingleCard.js"></script>
+  <script src="js/iconHelpers.js"></script>
+  <!-- =============================================================
+  🧩 This script uses ES Modules (import/export), so we must
+  specify type="module" for the browser to support it properly.
+
+  Without type="module", you'll get:
+  ❌ SyntaxError: import declarations may only appear at top level
+
+  Modules are automatically deferred and scoped. (below)
+  ============================================================= -->
+  <script type="module" src="js/singlecardpage/renderSingleCard.js"></script>
   <script src="js/search.js"></script>
+ 
 </body>
 </html>
 

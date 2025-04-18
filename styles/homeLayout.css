@@ -1,0 +1,39 @@
+/* Homepage Layout */
+#homepage-sections {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  #sets-section,
+  #battle-section {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  #sets-section,
+  #battle-section {
+    width: 100%;
+  }
+}
+
+#sets-section,
+#battle-section {
+  flex: 1 1 48%;
+  max-width: 48%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#back-button {
+  margin: 40px auto;
+  display: block;
+  max-width: 200px;
+  position: relative;
+}

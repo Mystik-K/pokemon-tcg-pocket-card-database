@@ -1,5 +1,5 @@
 [
-{
+  {
     "id": "p-a-001",
     "name": "Potion",
     "element": null,
@@ -15,8 +15,8 @@
     "abilities": [
       {
         "name": "Heal",
-        "cost": [],
-        "effect": "Heal 20 damage from 1 of your Pokémon."
+        "effects": "Heal 20 damage from 1 of your Pokémon.",
+        "cost": []
       }
     ]
   },
@@ -36,8 +36,8 @@
     "abilities": [
       {
         "name": "Speed Boost",
-        "cost": [],
-        "effect": "During this turn, the Retreat Cost of your Active Pokémon is 1 less."
+        "effects": "During this turn, the Retreat Cost of your Active Pokémon is 1 less.",
+        "cost": []
       }
     ]
   },
@@ -57,8 +57,8 @@
     "abilities": [
       {
         "name": "Reveal Hand",
-        "cost": [],
-        "effect": "Your opponent reveals their hand."
+        "effects": "Your opponent reveals their hand.",
+        "cost": []
       }
     ]
   },
@@ -78,8 +78,8 @@
     "abilities": [
       {
         "name": "Search",
-        "cost": [],
-        "effect": "Flip a coin. If heads, search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward."
+        "effects": "Flip a coin. If heads, search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward.",
+        "cost": []
       }
     ]
   },
@@ -99,8 +99,8 @@
     "abilities": [
       {
         "name": "Look Ahead",
-        "cost": [],
-        "effect": "Look at the top 5 cards of your deck and put them back in any order."
+        "effects": "Look at the top 5 cards of your deck and put them back in any order.",
+        "cost": []
       }
     ]
   },
@@ -120,8 +120,8 @@
     "abilities": [
       {
         "name": "Hand Disruption",
-        "cost": [],
-        "effect": "Your opponent shuffles their hand into their deck and draws 4 cards."
+        "effects": "Your opponent shuffles their hand into their deck and draws 4 cards.",
+        "cost": []
       }
     ]
   },
@@ -141,8 +141,8 @@
     "abilities": [
       {
         "name": "Research",
-        "cost": [],
-        "effect": "Draw 2 cards."
+        "effects": "Draw 2 cards.",
+        "cost": []
       }
     ]
   },
@@ -162,8 +162,8 @@
     "abilities": [
       {
         "name": "Look Ahead",
-        "cost": [],
-        "effect": "Look at the top 3 cards of your deck."
+        "effects": "Look at the top 3 cards of your deck.",
+        "cost": []
       }
     ]
   },
@@ -183,8 +183,8 @@
     "abilities": [
       {
         "name": "Research",
-        "cost": [],
-        "effect": "Draw 2 cards."
+        "effects": "Draw 2 cards.",
+        "cost": []
       }
     ]
   },
@@ -204,8 +204,8 @@
     "abilities": [
       {
         "name": "Look Ahead",
-        "cost": [],
-        "effect": "Look at the top 3 cards of your deck."
+        "effects": "Look at the top 3 cards of your deck.",
+        "cost": []
       }
     ]
   },
@@ -222,11 +222,9 @@
     "attacks": [
       {
         "name": "Gnaw",
+        "effects": null,
         "damage": "20",
-        "cost": [
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -246,20 +244,16 @@
     "attacks": [
       {
         "name": "Power Blast",
+        "effects": "Discard 2 Psychic Energy from this Pokémon.",
         "damage": "120",
-        "cost": [
-          "Psychic",
-          "Psychic",
-          "Colorless"
-        ],
-        "effect": "Discard 2 Psychic Energy from this Pokémon."
+        "cost": ["Psychic", "Psychic", "Colorless"]
       }
     ],
     "retreatCost": 2,
     "weakness": "Darkness",
     "abilities": []
   },
-  {
+    {
     "id": "p-a-011",
     "name": "Chansey",
     "element": "Colorless",
@@ -272,11 +266,9 @@
     "attacks": [
       {
         "name": "Pound",
+        "effects": null,
         "damage": "30",
-        "cost": [
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 2,
@@ -296,11 +288,9 @@
     "attacks": [
       {
         "name": "Scratch",
+        "effects": null,
         "damage": "10",
-        "cost": [
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -319,25 +309,15 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Gust",
+        "name": "Whirlwind",
+        "effects": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon.",
         "damage": "40",
-        "cost": [
-          "Grass",
-          "Colorless",
-		  "Colorless"
-        ],
-        "effect": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon."
+        "cost": ["Grass", "Colorless"]
       }
     ],
     "retreatCost": 1,
     "weakness": "Fire",
-    "abilities": [
-      {
-        "name": "Powder Heal",
-        "cost": [],
-        "effect": "Once during your turn, you may heal 20 damage from each of your Pokemon."
-      }
-	 ]
+    "abilities": []
   },
   {
     "id": "p-a-014",
@@ -351,17 +331,19 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Bubble Drain",
-        "damage": "80",
-        "cost": [
-          "Water",
-		  "Water",
-          "Colorless"
-        ],
-        "effect": "Heal 20 damage from this Pokémon"
+        "name": "Aqua Edge",
+        "effects": null,
+        "damage": "60",
+        "cost": ["Water", "Colorless"]
+      },
+      {
+        "name": "Hydro Pump",
+        "effects": "This attack does 30 more damage for each Water Energy attached to this Pokémon.",
+        "damage": "50+",
+        "cost": ["Water", "Water", "Colorless"]
       }
     ],
-    "retreatCost": 3,
+    "retreatCost": 2,
     "weakness": "Lightning",
     "abilities": []
   },
@@ -377,19 +359,17 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Gnaw",
+        "name": "Thunder Shock",
+        "effects": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
         "damage": "20",
-        "cost": [
-          "Lightning"
-        ],
-        "effect": null
+        "cost": ["Lightning"]
       }
     ],
     "retreatCost": 1,
     "weakness": "Fighting",
     "abilities": []
   },
-  {
+    {
     "id": "p-a-016",
     "name": "Clefairy",
     "element": "Fairy",
@@ -401,16 +381,14 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Slap",
-        "damage": "20",
-        "cost": [
-          "Psychic"
-        ],
-        "effect": null
+        "name": "Moonlight",
+        "effects": null,
+        "damage": "10",
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
-    "weakness": "Metal",
+    "weakness": "Steel",
     "abilities": []
   },
   {
@@ -426,11 +404,9 @@
     "attacks": [
       {
         "name": "Reckless Charge",
+        "effects": "This Pokémon also does 10 damage to itself.",
         "damage": "30",
-        "cost": [
-          "Fighting"
-        ],
-        "effect": "This Pokémon also does 10 damage to itself."
+        "cost": ["Fighting"]
       }
     ],
     "retreatCost": 1,
@@ -450,14 +426,9 @@
     "attacks": [
       {
         "name": "Mega Drain",
+        "effects": "Heal 30 damage from this Pokémon.",
         "damage": "80",
-        "cost": [
-          "Grass",
-          "Grass",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": "Heal 30 damage from this Pokémon."
+        "cost": ["Grass", "Grass", "Colorless", "Colorless"]
       }
     ],
     "retreatCost": 3,
@@ -477,12 +448,9 @@
     "attacks": [
       {
         "name": "Mist Slash",
+        "effects": null,
         "damage": "60",
-        "cost": [
-          "Water",
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Water", "Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -490,8 +458,8 @@
     "abilities": [
       {
         "name": "Water Shuriken",
-        "cost": [],
-        "effect": "Once during your turn, you may do 20 damage to 1 of your opponent’s Pokémon."
+        "effects": "Once during your turn, you may do 20 damage to 1 of your opponent’s Pokémon.",
+        "cost": []
       }
     ]
   },
@@ -508,19 +476,16 @@
     "attacks": [
       {
         "name": "Surprise Attack",
+        "effects": "Flip a coin. If tails, this attack does nothing.",
         "damage": "50",
-        "cost": [
-          "Psychic",
-          "Colorless"
-        ],
-        "effect": "Flip a coin. If tails, this attack does nothing."
+        "cost": ["Psychic", "Colorless"]
       }
     ],
     "retreatCost": 1,
     "weakness": "Darkness",
     "abilities": []
   },
-  {
+    {
     "id": "p-a-021",
     "name": "Onix",
     "element": "Fighting",
@@ -532,17 +497,13 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Land Crush",
-        "damage": "70",
-        "cost": [
-          "Fighting",
-		  "Fighting",
-		  "Fighting"
-        ],
-        "effect": null
+        "name": "Rock Throw",
+        "effects": null,
+        "damage": "40",
+        "cost": ["Fighting", "Colorless"]
       }
     ],
-    "retreatCost": 4,
+    "retreatCost": 3,
     "weakness": "Grass",
     "abilities": []
   },
@@ -559,15 +520,13 @@
     "attacks": [
       {
         "name": "Sing",
+        "effects": "Your opponent’s Active Pokémon is now Asleep.",
         "damage": null,
-        "cost": [
-          "Colorless"
-        ],
-        "effect": "Your opponent’s Active Pokémon is now Asleep."
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
-    "weakness": "Fighting",
+    "weakness": "Steel",
     "abilities": []
   },
   {
@@ -583,12 +542,9 @@
     "attacks": [
       {
         "name": "Vine Whip",
+        "effects": null,
         "damage": "40",
-        "cost": [
-          "Grass",
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Grass", "Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -607,12 +563,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Lightning Ball",
+        "name": "Thunder Wave",
+        "effects": "Flip a coin. If heads, your opponent’s Active Pokémon is now Paralyzed.",
         "damage": "20",
-        "cost": [
-          "Lightning"
-        ],
-        "effect": null
+        "cost": ["Lightning"]
       }
     ],
     "retreatCost": 1,
@@ -631,25 +585,14 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Inferno Dance",
-        "effect": "Flip 3 coins. Take an amount of 🔥 Energy from your Energy Zone equal to the number of heads and attach it to your Benched 🔥 Pokemon in any way you like.",
-        "damage": "",
-        "cost": [
-          "Fire"
-        ]
-      },
-      {
-        "name": "Heat Blast",
-        "damage": "70",
-        "cost": [
-          "Fire",
-          "Colorless",
-          "Colorless"
-        ]
+        "name": "Flare Blitz",
+        "effects": "Discard all Fire Energy from this Pokémon.",
+        "damage": "160",
+        "cost": ["Fire", "Fire", "Colorless"]
       }
     ],
     "retreatCost": 2,
-    "weakness": "Lightning",
+    "weakness": "Water",
     "abilities": []
   },
   {
@@ -665,11 +608,9 @@
     "attacks": [
       {
         "name": "Gnaw",
+        "effects": null,
         "damage": "20",
-        "cost": [
-          "Lightning"
-        ],
-        "effect": null
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -688,12 +629,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Tackle",
-        "damage": "20",
-        "cost": [
-          "Grass"
-        ],
-        "effect": null
+        "name": "Leaf Blade",
+        "effects": null,
+        "damage": "30",
+        "cost": ["Grass"]
       }
     ],
     "retreatCost": 1,
@@ -712,21 +651,17 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Volcanic Ash",
-        "damage": "indirect",
-        "cost": [
-          "Fire",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": "Discard 2 🔥 Energy from this Pokemon. This attack does 80 damage to 1 of your opponent's Pokemon."
+        "name": "Heat Cyclone",
+        "effects": null,
+        "damage": "90",
+        "cost": ["Fire", "Colorless", "Colorless"]
       }
     ],
     "retreatCost": 2,
     "weakness": "Water",
     "abilities": []
   },
-  {
+    {
     "id": "p-a-029",
     "name": "Blastoise",
     "element": "Water",
@@ -739,13 +674,9 @@
     "attacks": [
       {
         "name": "Hydro Pump",
+        "effects": "This attack does 20 more damage for each Water Energy attached to this Pokémon.",
         "damage": "50+",
-        "cost": [
-          "Water",
-          "Water",
-          "Colorless"
-        ],
-        "effect": "If this Pokemon has at least 2 extra 💧 Energy attached, this attack does 60 more damage."
+        "cost": ["Water", "Water", "Colorless"]
       }
     ],
     "retreatCost": 3,
@@ -764,12 +695,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Growl",
+        "name": "Quick Draw",
+        "effects": "Draw a card.",
         "damage": null,
-        "cost": [
-          "Colorless"
-        ],
-        "effect": "During your opponent's next turn, attacks used by the Defending Pokemon do -20 damage."
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -788,14 +717,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Do the Wave",
+        "name": "Tail Slap",
+        "effects": "Flip 2 coins. This attack does 40 damage for each heads.",
         "damage": "40x",
-        "cost": [
-          "Colorless",
-		  "Colorless",
-          "Colorless"
-        ],
-        "effect": "This attack does 30 damage for each of your Benched Pokemon."
+        "cost": ["Colorless", "Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -815,11 +740,9 @@
     "attacks": [
       {
         "name": "Ember",
+        "effects": "Discard a Fire Energy from this Pokémon.",
         "damage": "30",
-        "cost": [
-          "Fire"
-        ],
-        "effect": "Discard a Fire Energy from this Pokémon."
+        "cost": ["Fire"]
       }
     ],
     "retreatCost": 1,
@@ -838,12 +761,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Water Gun",
-        "damage": "20",
-        "cost": [
-          "Water"
-        ],
-        "effect": null
+        "name": "Bubble",
+        "effects": "Flip a coin. If heads, the opponent’s Active Pokémon is now Paralyzed.",
+        "damage": "10",
+        "cost": ["Water"]
       }
     ],
     "retreatCost": 1,
@@ -862,12 +783,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Nap",
-        "damage": null,
-        "cost": [
-          "Colorless"
-        ],
-        "effect": "Heal 20 damage from this Pokemon."
+        "name": "Peck",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -886,13 +805,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Bite",
+        "name": "Tackle",
+        "effects": null,
         "damage": "30",
-        "cost": [
-          "Grass",
-		  "Colorless"
-        ],
-        "effect": null
+        "cost": ["Grass"]
       }
     ],
     "retreatCost": 2,
@@ -911,20 +827,17 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Exciting Voltage",
-        "damage": "40+",
-        "cost": [
-          "Lightning",
-          "Lightning"
-        ],
-        "effect": "If this Pokemon has at least 2 extra ⚡ Energy attached, this attack does 80 more damage."
+        "name": "Thunder Punch",
+        "effects": "Flip a coin. If tails, this Pokémon does 20 damage to itself.",
+        "damage": "90",
+        "cost": ["Lightning", "Lightning", "Colorless"]
       }
     ],
     "retreatCost": 3,
     "weakness": "Fighting",
     "abilities": []
   },
-  {
+    {
     "id": "p-a-037",
     "name": "Cresselia ex",
     "element": "Psychic",
@@ -937,13 +850,9 @@
     "attacks": [
       {
         "name": "Psychic Flash",
+        "effects": null,
         "damage": "80",
-        "cost": [
-          "Psychic",
-          "Psychic",
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Psychic", "Psychic", "Colorless"]
       }
     ],
     "retreatCost": 2,
@@ -951,8 +860,8 @@
     "abilities": [
       {
         "name": "Lunar Plumage",
-        "cost": [],
-        "effect": "Whenever you attach a Psychic Energy from your Energy Zone to this Pokémon, heal 20 damage from this Pokémon."
+        "effects": "Whenever you attach a Psychic Energy from your Energy Zone to this Pokémon, heal 20 damage from this Pokémon.",
+        "cost": []
       }
     ]
   },
@@ -969,11 +878,9 @@
     "attacks": [
       {
         "name": "Confuse Ray",
+        "effects": "Your opponent's Active Pokémon is now Confused.",
         "damage": null,
-        "cost": [
-          "Psychic"
-        ],
-        "effect": "Your opponent's Active Pokémon is now Confused."
+        "cost": ["Psychic"]
       }
     ],
     "retreatCost": 1,
@@ -992,16 +899,14 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Metal Arms",
-        "damage": "20+",
-        "cost": [
-          "Metal"
-        ],
-        "effect": "If this Pokemon has a Pokemon Tool attached, this attack does 30 more damage."
+        "name": "Steel Wing",
+        "effects": "During your opponent's next turn, this Pokémon takes 20 less damage from attacks (after applying Weakness and Resistance).",
+        "damage": "30",
+        "cost": ["Metal", "Colorless"]
       }
     ],
     "retreatCost": 1,
-    "weakness": "Lightning",
+    "weakness": "Fire",
     "abilities": []
   },
   {
@@ -1017,11 +922,9 @@
     "attacks": [
       {
         "name": "Scratch",
+        "effects": null,
         "damage": "20",
-        "cost": [
-          "Fire"
-        ],
-        "effect": null
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -1040,16 +943,14 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Pound",
-        "damage": "20",
-        "cost": [
-          "Psychic"
-        ],
-        "effect": null
+        "name": "Charm",
+        "effects": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn.",
+        "damage": null,
+        "cost": ["Psychic"]
       }
     ],
     "retreatCost": 1,
-    "weakness": "Metal",
+    "weakness": "Steel",
     "abilities": []
   },
   {
@@ -1064,23 +965,19 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Dark Prism",
-        "damage": "80",
-        "cost": [
-          "Darkness",
-		  "Darkness",
-          "Colorless"
-        ],
-        "effect": null
+        "name": "Dark Pulse",
+        "effects": "This attack does 30 more damage for each Darkness Energy attached to all of your Pokémon.",
+        "damage": "60+",
+        "cost": ["Darkness", "Colorless"]
       }
     ],
     "retreatCost": 2,
-    "weakness": "Grass",
+    "weakness": "Fighting",
     "abilities": [
       {
-        "name": "Nightmare Aura",
-        "cost": [],
-        "effect": "Whenever you attach a [D] Energy from your Energy Zone to this Pokemon, do 20 damage to your opponent's Active Pokemon."
+        "name": "Shadow Guard",
+        "effects": "If this Pokémon has any Darkness Energy attached, it takes 20 less damage from attacks (after applying Weakness and Resistance).",
+        "cost": []
       }
     ]
   },
@@ -1096,13 +993,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Leech Seed",
-        "damage": "60",
-        "cost": [
-          "Grass",
-          "Grass"
-        ],
-        "effect": "Heal 20 damage from this Pokemon."
+        "name": "Petal Dance",
+        "effects": "Flip 3 coins. This attack does 40 damage for each heads.",
+        "damage": "40x",
+        "cost": ["Grass", "Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -1121,13 +1015,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Spark",
-        "damage": "40",
-        "cost": [
-          "Lightning",
-          "Lightning"
-        ],
-        "effect": "This attack also does 20 damage to 1 of your opponent's Benched Pokemon."
+        "name": "Thunderbolt",
+        "effects": "Discard all Energy from this Pokémon.",
+        "damage": "100",
+        "cost": ["Lightning", "Lightning", "Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -1135,12 +1026,12 @@
     "abilities": [
       {
         "name": "Resilience Link",
-        "cost": [],
-        "effect": "If you have Arceus or Arceus ex in play, this Pokémon takes 30 less damage from attacks."
+        "effects": "If you have Arceus or Arceus ex in play, this Pokémon takes 30 less damage from attacks.",
+        "cost": []
       }
     ]
   },
-  {
+    {
     "id": "p-a-045",
     "name": "Nosepass",
     "element": "Fighting",
@@ -1152,12 +1043,10 @@
     "rarity": "Promo",
     "attacks": [
       {
-        "name": "Iron Defense",
-        "damage": null,
-        "cost": [
-          "Fighting"
-        ],
-        "effect": "Flip a coin. If heads, during your opponent’s next turn, prevent all damage done to this Pokemon by Attacks."
+        "name": "Rock Throw",
+        "effects": "Flip a coin. If heads, this attack does 10 more damage.",
+        "damage": "30+",
+        "cost": ["Fighting"]
       }
     ],
     "retreatCost": 1,
@@ -1177,11 +1066,9 @@
     "attacks": [
       {
         "name": "Bite",
+        "effects": null,
         "damage": "20",
-        "cost": [
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -1201,13 +1088,9 @@
     "attacks": [
       {
         "name": "Brave Bird",
+        "effects": "This Pokémon does 30 damage to itself.",
         "damage": "130",
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": "This Pokémon does 30 damage to itself."
+        "cost": ["Colorless", "Colorless", "Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -1227,11 +1110,9 @@
     "attacks": [
       {
         "name": "Aqua Ring",
+        "effects": "Switch this Pokémon with one of your Benched Pokémon.",
         "damage": "30",
-        "cost": [
-          "Water"
-        ],
-        "effect": "Switch this Pokémon with one of your Benched Pokémon."
+        "cost": ["Water"]
       }
     ],
     "retreatCost": 1,
@@ -1251,13 +1132,9 @@
     "attacks": [
       {
         "name": "Body Slam",
+        "effects": "Flip a coin. If heads, the opponent's Active Pokémon is now Paralyzed.",
         "damage": "100",
-        "cost": [
-          "Colorless",
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": "Flip a coin. If heads, the opponent's Active Pokémon is now Paralyzed."
+        "cost": ["Colorless", "Colorless", "Colorless"]
       }
     ],
     "retreatCost": 4,
@@ -1277,21 +1154,15 @@
     "attacks": [
       {
         "name": "Psy Surge",
+        "effects": "This attack does 20 damage to each of your opponent's Benched Pokémon.",
         "damage": "60",
-        "cost": [
-          "Psychic"
-        ],
-        "effect": "This attack does 20 damage to each of your opponent's Benched Pokémon."
+        "cost": ["Psychic"]
       },
       {
         "name": "Power Blast",
+        "effects": "Discard 2 Psychic Energy from this Pokémon.",
         "damage": "120",
-        "cost": [
-          "Psychic",
-          "Psychic",
-          "Colorless"
-        ],
-        "effect": "Discard 2 Psychic Energy from this Pokémon."
+        "cost": ["Psychic", "Psychic", "Colorless"]
       }
     ],
     "retreatCost": 2,
@@ -1311,12 +1182,169 @@
     "attacks": [
       {
         "name": "Quick Turn",
+        "effects": "Flip 2 coins. This attack does 30 damage for each heads.",
         "damage": "30x",
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": "Flip 2 coins. This attack does 30 damage for each heads."
+        "cost": ["Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+    {
+    "id": "p-a-045",
+    "name": "Nosepass",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 80,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Iron Defense",
+        "effects": "Flip a coin. If heads, during your opponent's next turn, prevent all damage done to this Pokémon by attacks.",
+        "damage": null,
+        "cost": ["Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Grass",
+    "abilities": []
+  },
+  {
+    "id": "p-a-046",
+    "name": "Gible",
+    "element": "Fighting",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 60,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Bite",
+        "effects": null,
+        "damage": "20",
+        "cost": ["Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Grass",
+    "abilities": []
+  },
+  {
+    "id": "p-a-047",
+    "name": "Staraptor",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Stage 2",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Gible Drop Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Brave Bird",
+        "effects": "This Pokémon does 30 damage to itself.",
+        "damage": "130",
+        "cost": ["Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+  {
+    "id": "p-a-048",
+    "name": "Manaphy",
+    "element": "Water",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 50,
+    "set": "Promo A (P-A)",
+    "pack": "Manaphy & Snorlax Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Oceanic Gift",
+        "effects": "Choose 2 of your Benched Pokémon. For each of those Pokémon, take a Water Energy from your Energy Zone and attach it to that Pokémon.",
+        "damage": null,
+        "cost": ["Water"]
+      }
+    ],
+    "retreatCost": 1,
+    "weakness": "Lightning",
+    "abilities": []
+  },
+    {
+    "id": "p-a-049",
+    "name": "Snorlax",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Manaphy & Snorlax Wonder Pick Event",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Collapse",
+        "effects": "This Pokémon is now Asleep.",
+        "damage": "100",
+        "cost": ["Colorless", "Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 4,
+    "weakness": "Fighting",
+    "abilities": []
+  },
+  {
+    "id": "p-a-050",
+    "name": "Shiny Mewtwo ex",
+    "element": "Psychic",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 140,
+    "set": "Promo A (P-A)",
+    "pack": "Shop (Poké Gold Bundle)",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Psychic Sphere",
+        "effects": "Discard a random card from your opponent’s hand.",
+        "damage": "50",
+        "cost": ["Psychic", "Colorless"]
+      },
+      {
+        "name": "Psydrive",
+        "effects": null,
+        "damage": "150",
+        "cost": ["Psychic", "Psychic", "Colorless", "Colorless"]
+      }
+    ],
+    "retreatCost": 2,
+    "weakness": "Darkness",
+    "abilities": []
+  },
+  {
+    "id": "p-a-051",
+    "name": "Cyclizar",
+    "element": "Colorless",
+    "type": "Pokemon",
+    "subtype": "Basic",
+    "health": 80,
+    "set": "Promo A (P-A)",
+    "pack": "ex Starter Deck Missions",
+    "rarity": "Promo",
+    "attacks": [
+      {
+        "name": "Overacceleration",
+        "effects": "During your next turn, this Pokemon's Overacceleration attack does +20 damage.",
+        "damage": "40",
+        "cost": ["Colorless", "Colorless"]
       }
     ],
     "retreatCost": 1,
@@ -1336,11 +1364,9 @@
     "attacks": [
       {
         "name": "Cry for Help",
+        "effects": "Put 1 random Grass Pokémon from your deck into your hand.",
         "damage": null,
-        "cost": [
-          "Grass"
-        ],
-        "effect": "Put 1 random Grass Pokémon from your deck into your hand."
+        "cost": ["Grass"]
       }
     ],
     "retreatCost": 1,
@@ -1360,11 +1386,9 @@
     "attacks": [
       {
         "name": "Attack the Wound",
+        "effects": "If your opponent's Active Pokémon has any damage on it, this attack does 60 more damage.",
         "damage": "10+",
-        "cost": [
-          "Water"
-        ],
-        "effect": "If your opponent's Active Pokémon has any damage on it, this attack does 60 more damage."
+        "cost": ["Water"]
       }
     ],
     "retreatCost": 1,
@@ -1384,12 +1408,9 @@
     "attacks": [
       {
         "name": "Electric Punch",
+        "effects": null,
         "damage": "70",
-        "cost": [
-          "Lightning",
-          "Lightning"
-        ],
-        "effect": null
+        "cost": ["Lightning", "Lightning"]
       }
     ],
     "retreatCost": 1,
@@ -1397,8 +1418,8 @@
     "abilities": [
       {
         "name": "Counterattack",
-        "cost": [],
-        "effect": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon, do 20 damage to the Attacking Pokémon."
+        "effects": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon, do 20 damage to the Attacking Pokémon.",
+        "cost": []
       }
     ]
   },
@@ -1415,12 +1436,9 @@
     "attacks": [
       {
         "name": "Power Press",
+        "effects": "If this Pokémon has any damage counters on it, this attack does 60 more damage.",
         "damage": "60+",
-        "cost": [
-          "Fighting",
-          "Colorless"
-        ],
-        "effect": "If this Pokémon has any damage counters on it, this attack does 60 more damage."
+        "cost": ["Fighting", "Colorless"]
       }
     ],
     "retreatCost": 3,
@@ -1440,18 +1458,16 @@
     "attacks": [
       {
         "name": "Poison Sting",
+        "effects": "Your opponent's Active Pokémon is now Poisoned.",
         "damage": "10",
-        "cost": [
-          "Darkness"
-        ],
-        "effect": "Your opponent's Active Pokémon is now Poisoned."
+        "cost": ["Darkness"]
       }
     ],
     "retreatCost": 1,
     "weakness": "Psychic",
     "abilities": []
   },
-  {
+    {
     "id": "p-a-057",
     "name": "Bidoof",
     "element": "Colorless",
@@ -1464,12 +1480,9 @@
     "attacks": [
       {
         "name": "Headbutt",
+        "effects": null,
         "damage": "30",
-        "cost": [
-          "Colorless",
-          "Colorless"
-        ],
-        "effect": null
+        "cost": ["Colorless", "Colorless"]
       }
     ],
     "retreatCost": 2,
@@ -1489,11 +1502,9 @@
     "attacks": [
       {
         "name": "Plasma",
+        "effects": "Take 1 Lightning Energy from your Energy Zone and attach it to 1 of your Benched Lightning Pokémon.",
         "damage": "10",
-        "cost": [
-          "Lightning"
-        ],
-        "effect": "Take 1 Lightning Energy from your Energy Zone and attach it to 1 of your Benched Lightning Pokémon."
+        "cost": ["Lightning"]
       }
     ],
     "retreatCost": 1,
@@ -1513,16 +1524,13 @@
     "attacks": [
       {
         "name": "Punch",
+        "effects": null,
         "damage": "30",
-        "cost": [
-          "Fighting",
-          "Fighting"
-        ],
-        "effect": null
+        "cost": ["Fighting", "Fighting" ]
       }
     ],
     "retreatCost": 1,
     "weakness": "Psychic",
     "abilities": []
   }
-]
+ ]

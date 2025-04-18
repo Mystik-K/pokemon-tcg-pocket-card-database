@@ -1,3 +1,33 @@
+/* =====================================================
+📦 .main-container
+Global outer wrapper used on all pages (homepage, card, search).
+Centers and caps content width.
+===================================================== */
+
+/* Main Container */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  margin-top: 15px; /* or match the header height + padding */
+}
+
+/* Title Styling */
+h1 {
+  font-family: 'Impact', cursive;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
 /* Global Reset */
 * {
   box-sizing: border-box;

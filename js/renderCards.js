@@ -31,7 +31,7 @@ window.displayCardsForSet = function(setName) {
     number.className = 'card-number';
     number.textContent = extractCardNumber(card.id);
 
-    const rarityIcons = getRarityImages(card.rarity);
+    const rarityIcons = window.getRarityImages(card.rarity);
     if (rarityIcons) {
       label.appendChild(number);
       label.appendChild(rarityIcons);

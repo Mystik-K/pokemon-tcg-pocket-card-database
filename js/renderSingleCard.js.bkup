@@ -13,6 +13,15 @@ function getFolderFromId(id) {
   return "unknown";
 }
 
+function renderCostIcons(costArray) {
+  if (!Array.isArray(costArray)) return '';
+  return costArray.map(type => {
+    const icon = getTypeIcon(type);
+    return icon ? icon.outerHTML : type;
+  }).join(' ');
+}
+
+
 //Load master card list
 fetch('data/all_cards.json')
   .then(res => res.json())
@@ -31,20 +40,47 @@ fetch('data/all_cards.json')
 
     // 🔁 === RELATED CARD LOGIC ===
     // Normalize names to find related cards with the same root name (e.g., Pikachu ex, Pikachu V, etc.)
-	const getBaseName = (name) => {
-	  if (!name) return '';
-	  return name
-		.toLowerCase()
-		.replace(/( ex| gx| vstar| vmax| v| prism| break| lv\\.x| δ| ☆| ★| ∆| form| forme)/g, '')
-		.replace(/origin for|origin forme/g, 'origin')
-		.replace(/[^a-z0-9]/g, '')
-		.trim();
-	};
+	function getBasePokemonName(name) {
+	  const prefixes = [
+		"Shiny", "Paldean", "Alolan", "Galarian", "Hisuian", "Dark", "Gigantamax", "Mega", "Shadow"
+	  ];
 
-    const baseName = getBaseName(card.name);
-    const relatedCards = cards.filter(c =>
-      getBaseName(c.name) === baseName && c.id !== card.id
-    );
+	  const suffixes = [
+		"ex", "gx", "vmax", "v-star", "v", "BREAK", "δ", "☆", "★", "∆", "LV.X", "Prism", "Form", "Forme"
+	  ];
+
+	  let base = name;
+
+	  // Remove known prefixes
+	  for (const prefix of prefixes) {
+		const regex = new RegExp("^" + prefix + "\\s+", "i");
+		base = base.replace(regex, "");
+	  }
+
+	  // Remove known suffixes
+	  for (const suffix of suffixes) {
+		const regex = new RegExp("\\s+" + suffix + "$", "i");
+		base = base.replace(regex, "");
+	  }
+
+	  return base.trim();
+	}
+
+	// const getBaseName = (name) => {
+	  // if (!name) return '';
+	  // return name
+		// .toLowerCase()
+		// .replace(/( ex| gx| vstar| vmax| v| prism| break| lv\\.x| δ| ☆| ★| ∆| form| forme)/g, '')
+		// .replace(/origin for|origin forme/g, 'origin')
+		// .replace(/[^a-z0-9]/g, '')
+		// .trim();
+	// };
+
+    const baseName = getBasePokemonName(card.name);
+	const relatedCards = cards.filter(c =>
+	  getBasePokemonName(c.name) === baseName && c.id !== card.id
+	);
+
 	
 	const similarContainer = document.getElementById("similar-cards");
     const header = similarContainer.querySelector("h3");
@@ -52,7 +88,7 @@ fetch('data/all_cards.json')
     // 🎴 Inject thumbnails of similar cards
     if (relatedCards.length > 0) {
 
-	  header.textContent = `Other ${card.name} Cards`;
+	  header.textContent = `Other ${baseName.charAt(0).toUpperCase() + baseName.slice(1)} Cards`;
       //header.textContent = `Other ${baseName.charAt(0).toUpperCase() + baseName.slice(1)} Cards`;
 
       const relatedThumbs = document.getElementById("related-card-thumbs");
@@ -112,38 +148,41 @@ fetch('data/all_cards.json')
 
 	// Full breakdown of card properties
 	document.getElementById('card-meta').innerHTML = `
-	  <div class="left-info">
-		<p><strong>Type:</strong> ${card.type || 'Unknown'}</p>
-		<p><strong>Subtype:</strong> ${card.subtype || '—'}</p>
-		<p><strong>Element:</strong> ${card.element || '—'}</p>
-		<p><strong>Health:</strong> ${card.health || '—'}</p>
-		<p><strong>Weakness:</strong> ${card.weakness || '—'}</p>
-		<p><strong>Rarity:</strong> ${card.rarity || '—'}</p>
-	  </div>
+	<div class="left-info">
+	  <p><span class="info-key">Type:</span> <span class="info-value">${card.type || 'Unknown'}</span></p>
+	  <p><span class="info-key">Subtype:</span> <span class="info-value">${card.subtype || '—'}</span></p>
+	  <p>
+		<span class="info-key">Element:</span>
+		<span class="info-value">
+			${card.element ? getTypeIcon(card.element).outerHTML : ''}
+		</span>
+	  </p>
+	  <p><span class="info-key">Health:</span> <span class="info-value">${card.health || '—'}</span></p>
+	  <p>
+		<span class="info-key">Weakness:</span>
+		<span class="info-value">
+			${card.weakness ? getTypeIcon(card.weakness).outerHTML : ''}
+		</span>
+	  </p>
+		<p>
+		  <span class="info-key">Rarity:</span>
+		  ${card.rarity ? getRarityImages(card.rarity, 'rarity-in-meta').outerHTML : '<span class="info-value">—</span>'}
+		</p>
+	</div>
 	  <div class="right-info">
 		${card.abilities?.length ? `
-		  <h3>Abilities:</h3>
-		  <ul>
-			${card.abilities.map(ab => `
-			  <li>
-				<strong>${ab.name}</strong><br/>
-				<em>${ab.effect}</em>
-			  </li>
-			`).join('')}
-		  </ul>
+		  ${card.abilities.map(ab => `
+			<p><span class="info-key">Abilities:</span> <span class="info-value">${ab.name}</span></p>
+			<p><span class="description-text">${ab.effect}</span></p>
+		  `).join('')}
 		` : ''}
-
+		
 		${card.attacks?.length ? `
-		  <h3>Attacks:</h3>
-		  <ul>
-			${card.attacks.map(a => `
-			  <li>
-				<strong>${a.name}</strong>: ${a.damage || 0} dmg<br/>
-				<em>Cost:</em> ${a.cost?.join(', ') || '—'}
-				${a.effect ? `<br/><span class="attack-effect">${a.effect}</span>` : ''}
-			  </li>
-			`).join('')}
-		  </ul>
+		  ${card.attacks.map(a => `
+			<p><span class="info-key">Attacks:</span> <span class="info-value">${a.name}</span>: ${a.damage || 0} dmg</p>
+			<p><span class="description-text"><strong>Cost:</strong> ${renderCostIcons(a.cost)}</span></p>
+			${a.effect ? `<p><span class="description-text">${a.effect}</span></p>` : ''}
+		  `).join('')}
 		` : ''}
 	  </div>
 	`;
